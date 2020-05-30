@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+  <head> </head>
+
+  <body>
+
+    <div v-scope id='json_tbl_target' @vue:mounted='app.mounted'>
+    
+      <button @click='app.search()'>Make AJAX Call</button>
+    
+      <table>
+        <thead>
+          <tr>
+            <th>Student ID</th>
+            <th>Class ID</th>
+            <th>Advisor</th>
+            <th>Room</th>
+            <th>Dept</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for='item in app.results'>
+            <td>{{ item.StudentID }}</td>
+            <td>{{ item.ClassID }}</td>
+            <td>{{ item.Advisor }}</td>
+            <td>{{ item.Room }}</td>
+            <td>{{ item.Dept }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <script src='https://unpkg.com/petite-vue'></script>
+  
+    <script>
+      const app = new PetiteVue.reactive({
+        el: '#json_tbl_target',
+        results: '',
+        async search(){
+          const StudentsData = await fetch('/api/MyJSON')
+          this.results = await StudentsData.json()
+          console.log(this.results)
+        },
+      
+        mounted() {
+          console.log('mounted')
+          this.search()
+        }
+      });
+    
+      PetiteVue.createApp({app}).mount('#json_tbl_target')
+    </script>
+
+  </body>
+</html>

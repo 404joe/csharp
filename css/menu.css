@@ -1,0 +1,166 @@
+.bounce {
+	position: relative; /* breaks gumshoe !!! */
+	animation: bounce 2s infinite linear;
+	bottom: 0;
+	text-decoration: none;
+}
+/*
+.bounce:hover {
+	animation: none;
+	text-decoration: none;
+}
+.bounce:visited {
+	text-decoration: none;
+}
+*/
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% { top: 0; }
+	40% { top: -20px; }
+	60% { top: -10px; }
+}
+
+
+.fa {
+	font-size: 24px;
+  /*margin: 20px 4px;*/
+  color: white;
+  animation: all 0.3 ease;
+}
+
+.fa:hover {
+	transform: scale(1.5);
+}
+
+#chevron {
+	position: absolute; 
+	/*bottom: 0;*/  
+	left: 50%; 
+	text-align: center; 
+	/*padding: 20px;*/
+}
+#chev-inner {
+	position: absolute; 
+	bottom: 0; 
+	/*left: -50%;	*/
+  transform: translateX(-50%);  
+}
+
+.fa-chevron-up:before {
+  border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	/*left: 0.15em;*/
+	position: relative;
+	top: 0.15em;
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 0.45em;
+}
+
+
+
+/* menu */
+div.menu {
+	background : white;
+	overflow   : hidden;
+	display	   : block;        
+	position   : fixed;
+	top        : 0;
+	left       : 0;
+	right      : 0;
+	z-index    : 2;
+}
+
+
+
+/* * * * * * * context button  * * * * * *  */
+#menu-toggle {
+	display	: block;
+	float	: left;
+	color	: black;
+	text-decoration: none;
+	padding	: 11px;
+	margin	: 0 16px 0 16px;
+	font-weight: bold;
+	font-size: 22px;
+	cursor: default;
+}
+
+
+#menu-toggle:hover {
+	color	: white;
+	background: rgba(0, 0, 0, 0.5); /*#33AD5C;*/
+}
+
+#toggled {
+	display: none;
+}
+
+
+/* Menuitems */
+ul.menuitems {
+	clear: left;
+	list-style-type: none;
+	color: white;
+	padding:0px 12px 12px 12px;
+	margin:0;
+}
+
+ul.menuitems li {
+	color: #FFFFFF;
+}
+
+/* 8< - - - - - */
+ul.menuitems li a {
+	display: block;
+	padding: 12px 18px;
+	font-size: 24px;
+  font-weight: bold;
+	color: #000;
+	text-decoration: none;
+}
+
+ul.menuitems li a.active {
+  background: black; /*rgba(255, 255, 0, 0.5)*/ /*#33AD5C;*/
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+}
+
+ul.menuitems li a:hover {
+	background: black; /*#33AD5C;*/
+	background: rgba(0, 0, 0, 0.5);
+	
+	color: black;
+	cursor: default;
+	transition:all 0.5s ease-in-out;
+}
+
+
+/* 8< - - - - - */
+
+/*
+nav.menunav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;  
+} */
+
+/* media queries 568 768 */
+@media screen and (min-width: 568px) {
+	#menu-toggle {
+		display: none;
+	}
+	nav.menunav {
+		float: right;  
+	}
+	ul.menuitems {
+		display: block !important;
+	}
+	ul.menuitems li {
+		float: left;
+	}
+}
+
