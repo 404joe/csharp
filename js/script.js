@@ -1,87 +1,55 @@
-var canvas = document.getElementById('canvas');
-var gl = canvas.getContext('webgl');
-var startTime = new Date().getTime(); // Get start time for animating
-
-// ----- Uniform ----- //
-function Uniform( name, suffix ) {
-  this.name = name;
-  this.suffix = suffix;
-  this.location = gl.getUniformLocation( program, name );
+// ******* OnScroll indicator *******
+document.body.onscroll = function () {
+  ScrollIndicator()
 }
 
-Uniform.prototype.set = function( ...values ) {
-  var method = 'uniform' + this.suffix;
-  var args = [ this.location ].concat( values );
-  gl[ method ].apply( gl, args );
-};
+// document.body.addEventListener("scroll", ScrollIndicator());
+function ScrollIndicator() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  var el = document.getElementById('scroll').style.setProperty('--progress', Math.round(scrolled) + '%');
+}
+ 
 
-// ----- Rect ----- //
-function Rect( gl ) {
-  var buffer = gl.createBuffer();
-  gl.bindBuffer( gl.ARRAY_BUFFER, buffer );
-  gl.bufferData( gl.ARRAY_BUFFER, Rect.verts, gl.STATIC_DRAW );
+// ******* Copy button *******
+var copybtn = '<svg xmlns="http://www.w3.org/2000/svg" width=22 height=22 viewBox="0 0 32 32" onclick="handleCopy"> \
+                              <path d="M29 4h-9c0-2.209-1.791-4-4-4s-4 1.791-4 4h-9c-0.552 0-1 0.448-1 1v26c0 0.552 0.448 1 1 1h26c0.552 0 1-0.448 1-1v-26c0-0.552-0.448-1-1-1zM16 2c1.105 0 2 0.895 2 2s-0.895 2-2 2c-1.105 0-2-0.895-2-2s0.895-2 2-2zM28 30h-24v-24h4v3c0 0.552 0.448 1 1 1h14c0.552 0 1-0.448 1-1v-3h4v24z"></path> \
+                              <path d="M14 26.828l-6.414-7.414 1.828-1.828 4.586 3.586 8.586-7.586 1.829 1.828z"></path> \
+                            </svg>' ;
+                            
+var copychk = '<svg xmlns="http://www.w3.org/2000/svg" width=22 height=22 viewBox="0 0 32 32" > \
+                              <path d="M27 4l-15 15-7-7-5 5 12 12 20-20z"></path> \
+                            </svg>' ;
+ 
+function copyToClipboard(text) {
+  var textarea = document.createElement('textarea');
+  textarea.value = text;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textarea);
+}
+ 
+function handleCopy(e) {
+  var tgn = e.target.tagName.toUpperCase();
+  var el = (tgn == 'BUTTON') ? e.target : ( (tgn == 'SVG') ?  e.target.parentElement : e.target.parentElement.parentElement );
+  copyToClipboard(el.previousElementSibling.innerText);
+  el.innerHTML = copychk;
+  setTimeout( function() { el.innerHTML = copybtn; }, 2000);
 }
 
-Rect.verts = new Float32Array([
-  -1, -1,
-   1, -1,
-  -1,  1,
-   1,  1,
-]);
-
-Rect.prototype.render = function( gl ) {
-  gl.drawArrays( gl.TRIANGLE_STRIP, 0, 4 );
-};
-
-// ----- init WebGL ----- //
-
-// create program
-var program = gl.createProgram();
-// add shaders
-var vertexShaderSource = document.querySelector('#vertex-shader').text;
-var fragmentShaderSource = document.querySelector('#fragment-shader').text;
-addShader( vertexShaderSource, gl.VERTEX_SHADER );
-addShader( fragmentShaderSource, gl.FRAGMENT_SHADER );
-// link & use program
-gl.linkProgram( program );
-gl.useProgram( program );
-
-// create fragment uniforms
-var uResolution = new Uniform( 'u_resolution', '2f' );
-var uTime = new Uniform( 'u_time', '1f' );
-
-// create position attrib
-var billboard = new Rect( gl );
-var positionLocation = gl.getAttribLocation( program, 'a_position' );
-gl.enableVertexAttribArray( positionLocation );
-gl.vertexAttribPointer( positionLocation, 2, gl.FLOAT, false, 0, 0 );
-
-// resize 
-var width, height;
-width  = canvas.width  = 200;  // window.innerWidth / 3;
-height = canvas.height = 200;  // window.innerHeight / 3;
-uResolution.set( width, height );
-gl.viewport( 0, 0, width, height );
-
-animate();
-
-// ----- addShader ----- //    
-function addShader( source, type ) {
-  var shader = gl.createShader( type );
-  gl.shaderSource( shader, source );
-  gl.compileShader( shader );
-  var isCompiled = gl.getShaderParameter( shader, gl.COMPILE_STATUS );
-  if ( !isCompiled ) {
-    throw new Error( 'Shader compile error: ' + gl.getShaderInfoLog( shader ) );
+document.addEventListener('DOMContentLoaded', function() {
+  var preTags = document.getElementsByTagName('pre');
+  
+  for (var i = 0; i < preTags.length; i++) {
+    var preTag = preTags[i];
+    var cb = document.createElement('button');
+    cb.innerHTML = copybtn;
+    cb.classList.add('copy-button');
+    
+    cb.addEventListener('click', handleCopy );
+    preTag.insertAdjacentElement('afterend', cb);
   }
-  gl.attachShader( program, shader );
-}
 
-// ----- render ----- //
-function animate() {
-  var now = new Date().getTime();  // update
-  var currentTime = ( now - startTime ) / 1000;
-  uTime.set( currentTime );
-  billboard.render( gl );           
-  setTimeout(function() { requestAnimationFrame(animate); }, 16); // render
-}
+});

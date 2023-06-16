@@ -1,36 +1,56 @@
-# Курс C# Експрес
+# C# Turbo Course
 
-Добре дошли в курса C# Експрес! Този курс е предназначен да ви предостави изчерпателно въведение в програмирането на C#. Независимо дали сте начинаещ или имате известен опит в програмирането, този курс ще ви помогне да развиете стабилна основа на C# и ще ви даде възможност да създавате свои собствени приложения.
+Welcome to the C# Turbo Course! This course is designed to provide you with a comprehensive introduction to C# programming. Whether you are a beginner or have some experience in programming, this course will help you develop a solid foundation in C# and enable you to create your own applications.
 
-## Започнете с курса
+___
 
-За да започнете с курса, следвайте тези стъпки
+For Bulgarian Language press [#ONE-1](https://avrgejoe.github.io/csharp/bg)
 
-1. Клонирайте или изтеглете това [repository](https://github.com/avrgeJoe/csharp/archive/refs/heads/master.zip).
-2. Отворете материалите на курса в предпочитания от вас IDE, или текстов редактор, или [Github Codespaces](https://github.com/codespaces).
-3. Разгледайте всяка тема от съдържанието, и изпълнете упражненията.
-4. Примерите към темите са в директория [_examples](https://github.com/avrgeJoe/csharp/tree/master/_examples)
+## Getting Started with the Course
 
-## Съдържание на курса
+To get started with the course, follow these steps:
 
-- [I. Въведение в курса](https://avrgejoe.github.io/csharp/#I)
-- [II. Променливи](https://avrgejoe.github.io/csharp/#II)
-- [III. Управляващи инструкции: if × for](https://avrgejoe.github.io/csharp/#III)
-- [IV. Масиви](https://avrgejoe.github.io/csharp/#IV)
-- [V. Основи на ООП](https://avrgejoe.github.io/csharp/#V)
-- [VI. ООП - Тънкости](https://avrgejoe.github.io/csharp/#VI)
-- [VII. Събития, Изключения, Файлове](https://avrgejoe.github.io/csharp/#VII)
-- [VIII. Приложения за WEB: Razor × Blazor × SignalR](https://avrgejoe.github.io/csharp/#VIII)
-- [IX. Бази Данни и SQL](https://avrgejoe.github.io/csharp/#IX)
-- [X. C# WebApp × SQL Бази Данни](https://avrgejoe.github.io/csharp/#X)
+1. Clone or download this [repository](https://github.com/avrgeJoe/csharp/archive/refs/heads/master.zip).
+2. Open the course materials in your preferred IDE, text editor, or [Github Codespaces](https://github.com/codespaces).
+3. Explore each topic in the content and complete the exercises.
+4. The examples related to the topics can be found in the [_examples](https://github.com/avrgeJoe/csharp/tree/master/_examples) directory.
 
-Всяка тема е придружена от практически примери и упражнения за затвърждаване на вашето знание. До края на този курс ще имате солидно разбиране за основите на C# и ще сте готови да се справите с тънкости за по-напреднали.
+## Course Contents
 
+- [I. Introduction to the Course](https://avrgejoe.github.io/csharp/#I)
+- [II. Variables](https://avrgejoe.github.io/csharp/#II)
+- [III. Control Statements: if × for](https://avrgejoe.github.io/csharp/#III)
+- [IV. Arrays](https://avrgejoe.github.io/csharp/#IV)
+- [V. Object-Oriented Basics](https://avrgejoe.github.io/csharp/#V)
+- [VI. OOP - Advanced Topics](https://avrgejoe.github.io/csharp/#VI)
+- [VII. Events, Exceptions, Files](https://avrgejoe.github.io/csharp/#VII)
+- [VIII. Web Applications: Razor × Blazor × SignalR](https://avrgejoe.github.io/csharp/#VIII)
+- [IX. Databases and SQL](https://avrgejoe.github.io/csharp/#IX)
+- [X. C# WebApp × SQL Databases](https://avrgejoe.github.io/csharp/#X)
+
+Each topic is accompanied by practical examples and exercises to reinforce your knowledge. By the end of this course, you will have a solid understanding of the fundamentals of C# and be ready to tackle more advanced topics.
+
+
+## Contribution
+
+Thank you for considering contributing to this project! 
+
+### Localization and Native Language Translators
+Let's make this project accessible to users around the world by offering localization in different languages. If you are a native speaker and would like to contribute by translating the project into your language, we would be thrilled to have your assistance. Please reach out to us at avrgejoe404@gmail.com to discuss further details.
+
+### Bug Reports and Feedback
+If you come across any bugs or have suggestions for improvements, please let us know. Your feedback is valuable in helping us create a better user experience. You can report bugs or provide feedback by emailing us at avrgejoe404@gmail.com. We appreciate your time and effort in helping us maintain and enhance this project.
+
+We look forward to your contributions and feedback.
 
 ## Credits
 
-Този курс е създаден с помощта на [ChatGPT](https://chat.openai.com/), AI езиков модел, разработен от [OpenAI](https://openai.com/). ChatGPT взе участие по работата и даде полезни съвети и насоки относно курса.
+This course was created with the assistance of [ChatGPT](https://chat.openai.com/), an AI language model developed by [OpenAI](https://openai.com/). ChatGPT contributed to the development and provided useful advice and recommendations regarding the course.
 
-Успешно програмиране!
+Happy coding!
+
+## License
 
 [![License: CC BY-ND 4.0](https://img.shields.io/badge/License-CC%20BY--ND-lightgrey.svg)](https://creativecommons.org/licenses/by-nd/4.0/)
+
+© 2023, Average Joe
