@@ -2,9 +2,7 @@
 
 Welcome to the C# Turbo Course! This course is designed to provide you with a comprehensive introduction to C# programming. Whether you are a beginner or have some experience in programming, this course will help you develop a solid foundation in C# and enable you to create your own applications.
 
-___
-
-For Bulgarian Language press [#ONE-1](https://avrgejoe.github.io/csharp/bg)
+For Bulgarian Language press [#ONE-1](https://github.com/avrgeJoe/csharp/tree/master/bg)
 
 ## Getting Started with the Course
 
