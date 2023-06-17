@@ -22,16 +22,16 @@
     <nav data-scroll-header class='menunav'> <a id='menu-toggle' onclick='MainMenu();'>&#x2261;</a>
       <!-- Menu &#x2261; &#x00D7; ≡ ˟ -->
       <ul data-gumshoe class='menuitems' id='toggled'>
-        <li><a data-scroll href='#I'    onclick='closeMenu()'>I</a></li>
-        <li><a data-scroll href='#II'   onclick='closeMenu()'>II</a></li>
-        <li><a data-scroll href='#III'  onclick='closeMenu()'>III</a></li>
-        <li><a data-scroll href='#IV'   onclick='closeMenu()'>IV</a></li>
-        <li><a data-scroll href='#V'    onclick='closeMenu()'>V</a></li>
-        <li><a data-scroll href='#VI'   onclick='closeMenu()'>VI</a></li>
-        <li><a data-scroll href='#VII'  onclick='closeMenu()'>VII</a></li>
-        <li><a data-scroll href='#VIII' onclick='closeMenu()'>VIII</a></li>
-        <li><a data-scroll href='#IX'   onclick='closeMenu()'>IX</a></li>
-        <li><a data-scroll href='#X'    onclick='closeMenu()'>X</a></li>
+        <li><a data-scroll href='#I'    onclick='closeMenu()' class='mnu'>I</a></li>
+        <li><a data-scroll href='#II'   onclick='closeMenu()' class='mnu'>II</a></li>
+        <li><a data-scroll href='#III'  onclick='closeMenu()' class='mnu'>III</a></li>
+        <li><a data-scroll href='#IV'   onclick='closeMenu()' class='mnu'>IV</a></li>
+        <li><a data-scroll href='#V'    onclick='closeMenu()' class='mnu'>V</a></li>
+        <li><a data-scroll href='#VI'   onclick='closeMenu()' class='mnu'>VI</a></li>
+        <li><a data-scroll href='#VII'  onclick='closeMenu()' class='mnu'>VII</a></li>
+        <li><a data-scroll href='#VIII' onclick='closeMenu()' class='mnu'>VIII</a></li>
+        <li><a data-scroll href='#IX'   onclick='closeMenu()' class='mnu'>IX</a></li>
+        <li><a data-scroll href='#X'    onclick='closeMenu()' class='mnu'>X</a></li>
       </ul>
     </nav>
   </div>
@@ -42,7 +42,7 @@
     
     <hr>
     
-    <img src='img/image013.jpg' class='img' alt='Курс C#'>
+    <img src='img/image013.jpg' class='img' alt='C# Turbo Course'>
     
     <hr>
     
@@ -192,13 +192,13 @@ $ dotnet publish -c Release -r ubuntu-x64
     <hr>
     
     <p><b>Practice</b></p>
-    <p>1. Create an account on GitHub: <a href='https://github.com/signup' target='_blank'>https://github.com/signup</a> </p>
+    <p>1. Create an account on GitHub: <a href='https://github.com/signup' target='_blank' class='lnk'>https://github.com/signup</a> </p>
     <p>2. Log in to your account and create a new repository /project source code/
-      <a href='https://github.com/new' target='_blank'>https://github.com/new</a>, Name it "csharp" or as desired.
+      <a href='https://github.com/new' target='_blank' class='lnk'>https://github.com/new</a>, Name it "csharp" or as desired.
     </p> <p>3. Go to Codespaces:
-      <a href='https://github.com/codespaces' target='_blank'>https://github.com/codespaces</a> </p>
+      <a href='https://github.com/codespaces' target='_blank' class='lnk'>https://github.com/codespaces</a> </p>
     <p>4. Select Repository ➜ your repository from step 2, and click Create.</p>
-    <p>5. Return to Codespaces @ <a href='https://github.com/codespaces' target='_blank'>https://github.com/codespaces</a> </p>
+    <p>5. Return to Codespaces @ <a href='https://github.com/codespaces' target='_blank' class='lnk'>https://github.com/codespaces</a> </p>
     <p>6. Under Owned by - your username - you will find the new template. Click on the ellipsis /<b>...</b>/ next to it, choose 
       <b>Rename</b>, and rename it to <b>csharp.</b> 
     <p>6. Click on <b>csharp</b> - with the left mouse button.</p>    
@@ -340,7 +340,7 @@ namespace MyApplication
 </pre>
 
     <p><b><span class='red'>!!!</span></b> File and directory names are case-sensitive. The 
-      file <b><span class='red'>P</span>rogram.cs</b> is different from the file <b><span class='red'>p</span></b>Program.cs
+      file <b><span class='red'>P</span>rogram.cs</b> is different from the file <b><span class='red'>p</span></b>rogram.cs
       <b><span class='red'>!!!</span></b></p>
       
     <p>@avrgeJoe $ <b>grep -rnw <span class='red'>.</span> -e '<span class='blu'>Main</span>'
@@ -359,7 +359,7 @@ namespace MyApplication
         
     <hr>
     
-    <p>17. You can explore the examples for the course at this <a href="https://github.com/avrgeJoe/csharp/tree/master/_examples">link</a>.</p>
+    <p>17. You can explore the examples for the course at this <a href='https://github.com/avrgeJoe/csharp/tree/master/_examples' target='_blank'  class='lnk'>link</a>.</p>
     
     <hr>
 
@@ -548,6 +548,12 @@ class Program
       program execution. Constants are useful for providing meaningful names to important
       values, improving code readability, and ensuring that specific values remain constant
       throughout the program.</p>
+      
+    <p><b>Note</b>: The line Console.WriteLine(<b>$</b>"You entered: <b>{a}</b>");
+      is called string interpolation. The <b>$</b> sign before "You entered: {a}" means 
+      that the content within the <b>{</b>braces<b>}</b> in the string will be replaced with the value of the 
+      variable, i.e., <b>{a}</b> will be replaced with the value of the variable named <b>a</b>.</p>  
+      
     <p><b>The null Constant</b></p>
     <p>In C#, the null constant is represented by the keyword <b>null</b>. It is used to indicate
       the absence of a value or that a variable of an object type does not reference an object.
@@ -690,7 +696,7 @@ else
     <hr>
 
     <p><b>Practice</b></p>
-    <p><b><span class='grn'>String Manipulation Problems - in the next topic</span> /<a href='#III'>III. Control Statements</a>/ </b></p>
+    <p><b><span class='grn'>String Manipulation Problems - in the next topic</span> /<a href='#III' class='lnk'>III. Control Statements</a>/ </b></p>
     <p><b>Copying repositories from GitHub</b>:</p>
     <p>Open Codespaces, like the previous time.</p>
     
@@ -1169,11 +1175,6 @@ do
 // Enter a number; enter 0 to exit
 // 0
 </pre>    
-    
-    <p><b>Note</b>: The line Console.WriteLine(<b>$</b>"You entered: <b>{a}</b>");
-      is called string interpolation. The <b>$</b> sign before "You entered: {a}" means 
-      that the content within the <b>{</b>braces<b>}</b> in the string will be replaced with the value of the 
-      variable, i.e., <b>{a}</b> will be replaced with the value of the variable named <b>a</b>.</p>
     
     <p>The solution to the problem can also be implemented using the <b>continue</b> statement to skip to the next iteration.</p>
 
@@ -3062,7 +3063,7 @@ Console.WriteLine("2. Beer on hold:" + a); // Never reached
             
  <p>The following example demonstrates the execution of a <b>GET</b> request to a sample <b>Web API</b> /Web Application Program 
     Interface - a standard service on the internet that returns <b>JSON</b> strings from a given web address. For example, 
-    <a href='https://jsonplaceholder.typicode.com/posts/' target='_blank'>https://jsonplaceholder.typicode.com/posts/</a> open it with the 
+    <a href='https://jsonplaceholder.typicode.com/posts/' target='_blank' class='lnk'>https://jsonplaceholder.typicode.com/posts/</a> open it with the 
     mouse <b>!!!</b> / using the <b>HttpClient</b> object and handling potential errors <b>/exceptions/</b> with 
     a <b>try/catch/finally</b> block:</p>
 
@@ -3321,7 +3322,7 @@ Console.WriteLine("Read String: " + <b><span class='ora'>rStr</span></b>); // Di
 
     <p><b>Bootstrap</b></p>
 
-    <p>The greatest advantage of <a href='https://getbootstrap.com/' target='_blank'>Bootstrap</a> is that it automatically integrates 
+    <p>The greatest advantage of <a href='https://getbootstrap.com/' target='_blank' class='lnk'>Bootstrap</a> is that it automatically integrates 
       into your projects if they are created with the following command:</p>
 
 <pre class='pre'>
@@ -3405,7 +3406,7 @@ Console.WriteLine("Read String: " + <b><span class='ora'>rStr</span></b>); // Di
     <hr>
     
     <p> 2. SignalR: We will create an online chat application as demonstrated in this tutorial: 
-      <a href="https://learn.microsoft.com/en-us/aspnet/core/tutorials/signalr" target='_blank'>Asp NetCore SignalR</a>. To do this, execute 
+      <a href="https://learn.microsoft.com/en-us/aspnet/core/tutorials/signalr" target='_blank' class='lnk'>Asp NetCore SignalR</a>. To do this, execute 
       the following commands in the Terminal:</p>
 
 <pre class='pre'>
@@ -3568,20 +3569,19 @@ app.Run();
   
   &lt;/body&gt;
 &lt;/html&gt;
-</pre>        
-        <p> 4. 
-            <a href="https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/?view=aspnetcore-7.0" target='_blank'>tutorial razor pages</a>
-        </p>
-        
-        <hr>
-        
-        <p> 5.
-            <a href="https://dotnet.microsoft.com/en-us/learn/aspnet/blazor-tutorial/intro" target='_blank'>blazor - tutorial - intro</a>
-        </p>
-        
-        
-        <hr>
-        
+</pre>  
+      
+    <p> 4. 
+      <a href="https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/?view=aspnetcore-7.0" target='_blank' class='lnk'>tutorial razor pages</a>
+    </p>
+    
+    <hr>
+    
+    <p> 5.
+      <a href="https://dotnet.microsoft.com/en-us/learn/aspnet/blazor-tutorial/intro" target='_blank' class='lnk'>blazor - tutorial - intro</a>
+    </p>
+    
+    <hr>
         
     <h2 id='IX'>IX. Databases and SQL</h2>
     <p><b>Databases and Database Management Systems (DBMS)</b></p>
@@ -3686,10 +3686,7 @@ app.Run();
     <table>
       <thead>  
         <tr>
-            <th>Student#</th>
-            <th>Advisor</th>
-            <th>Adv-Room</th>
-            <th>Class#</th>
+            <th>Student#</th><th>Advisor</th><th>Adv-Room</th><th>Class#</th>
         </tr>
       </thead>
       <tbody>  
@@ -4499,10 +4496,10 @@ namespace YourNamespace
     <p><img src="img/image012.jpg" class='img' alt='JSON Responce'></p>
 
 
-    <p>For more information, visit: <a href='https://github.com/vuejs/petite-vue' target='_blank'>Petite Vue.js</a></p>
+    <p>For more information, visit: <a href='https://github.com/vuejs/petite-vue' target='_blank' class='lnk'>Petite Vue.js</a></p>
     
     <hr>
-    <img src='img/image013.jpg' class='img' alt='Курс C#'>
+    <img src='img/image013.jpg' class='img' alt='C# Turbo Course'>
     <hr>
     
     <p>&nbsp;</p>

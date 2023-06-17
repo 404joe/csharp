@@ -80,7 +80,7 @@ div.menu {
 #menu-toggle {
 	display	: block;
 	float	: left;
-	color	: black;
+	/*color	: black;*/
 	text-decoration: none;
 	padding	: 11px;
 	margin	: 0 16px 0 16px;
@@ -104,14 +104,15 @@ div.menu {
 ul.menuitems {
 	clear: left;
 	list-style-type: none;
-	color: white;
+	/*color: white;*/
 	padding:0px 12px 12px 12px;
 	margin:0;
 }
 
+/*
 ul.menuitems li {
 	color: #FFFFFF;
-}
+} */
 
 /* 8< - - - - - */
 ul.menuitems li a {
@@ -119,12 +120,12 @@ ul.menuitems li a {
 	padding: 12px 18px;
 	font-size: 24px;
   font-weight: bold;
-	color: #000;
+	color: black;
 	text-decoration: none;
 }
 
 ul.menuitems li a.active {
-  background: black; /*rgba(255, 255, 0, 0.5)*/ /*#33AD5C;*/
+  background: black; 
 	background: rgba(0, 0, 0, 0.5);
 	color: white;
 }
@@ -132,11 +133,50 @@ ul.menuitems li a.active {
 ul.menuitems li a:hover {
 	background: black; /*#33AD5C;*/
 	background: rgba(0, 0, 0, 0.5);
-	
 	color: black;
 	cursor: default;
 	transition:all 0.5s ease-in-out;
 }
+
+@media (prefers-color-scheme: light) {
+
+  div.menu {
+    background : black;
+  }
+  
+  .fa {
+    color: black;
+  }
+  
+  #menu-toggle:hover {
+  	color	: black;
+  	background: rgba(255, 255, 255, 0.8); /*#33AD5C;*/
+  }
+
+  ul.menuitems li a {
+  	display: block;
+  	color: white;
+  }
+  
+  ul.menuitems li a.active {
+    background: white; 
+  	background: rgba(255, 255, 255, 1);
+  	color     : black;
+  }
+
+  ul.menuitems li a:hover {
+  	background: white; 
+  	background: rgba(255, 255, 255, 0.8);
+  	color     : black;
+  }
+  
+}
+
+
+
+
+
+
 
 
 /* 8< - - - - - */
