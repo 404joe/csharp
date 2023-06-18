@@ -1,6 +1,6 @@
 body { word-break: break-word; word-wrap: break-word; }
 
-html {background-color: #000000;}
+html {background-color: black;}
  
 html, body { margin: 0; /*height: 100%;*/ }
 
@@ -72,12 +72,12 @@ p, a.lnk, b, span, td, th {
   font-size: 0.6rem;            
 }  
 
-#content { background-color: #000000; color: white; /* text-align: justify;  */
+#content { background-color: black; color: white; /* text-align: justify;  */
            margin-right: 15%; margin-left: 15%; margin-bottom: 20px; padding-left:4%; padding-right:4%; 
            margin-top: 45px;  margin-bottom: 45px;   }
 
 ::selection {
-  background-color: #FFFFFF;
+  background-color: white;
   color: black;
 }
 
@@ -88,7 +88,7 @@ img.narrow { max-width: 300px; }
 img.wide { max-width: 700px; }
  
 a.lnk {
-    color: #fff;
+    color: white;
     text-decoration: none;
     border-bottom: 1px solid #01b96b;
     color: hsla(0,0%,100%,.8)
