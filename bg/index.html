@@ -210,19 +210,19 @@ $ dotnet publish -c Release -r ubuntu-x64
     <hr>
     <p><b>Задачи</b></p>
     <p>1. Направете си акаунт в gbithub:
-      <a href='https://github.com/signup' target='_blank'>https://github.com/signup</a>
+      <a href='https://github.com/signup' target='_blank' class='lnk'>https://github.com/signup</a>
     </p>
     <p>1a. Влезте в акаунта си, и създайте ново Repository /сорс-код на проект/
-      <a href='https://github.com/new' target='_blank'>https://github.com/new</a>,
+      <a href='https://github.com/new' target='_blank' class='lnk'>https://github.com/new</a>,
       именовайте го csharp, или както желаете
     </p>
     <p>2. Отидете на Codespaces :
-      <a href='https://github.com/codespaces' target='_blank'>https://github.com/codespaces</a>
+      <a href='https://github.com/codespaces' target='_blank' class='lnk'>https://github.com/codespaces</a>
     </p>
     <!--p>3. Изберете Templates ➜ Blank ➜ New</p-->
     <p>3. Изберете Repository ➜ вашето Repository, от 1а, Дайте Create</p>
     <p>4. Върнете се в Codespaces /
-      <a href='https://github.com/codespaces' target='_blank'>https://github.com/codespaces</a>
+      <a href='https://github.com/codespaces' target='_blank' class='lnk'>https://github.com/codespaces</a>
     </p>
     <p>5. Отидете в Owned by - вашето потребителско име - под него е новия шаблон /<b>template</b>/,
       изберете ... в дясно от него, дайте <b>Rename</b>, и го преименувайте на <b>csharp</b></p>
@@ -369,7 +369,7 @@ namespace MyApplication
 
     <hr>
     
-    <p>17. Примерите към курса може да разгледате на този <a href="https://github.com/avrgeJoe/csharp/tree/master/_examples">линк</a>. </p>
+    <p>17. Примерите към курса може да разгледате на този <a href="https://github.com/avrgeJoe/csharp/tree/master/_examples" target='_blank' class='lnk'>линк</a>. </p>
     
     <hr>
 
@@ -705,7 +705,7 @@ else
     <p><b>Trim</b>: Премахва интервалите от низа.</p>
     <hr>
     <p><b>Задачи</b></p>
-    <p><b><span class='grn'>Задачи символни низове - в следващата тема</span> /<a href='#III'>III. Управляващи инструкции</a>/ </b></p>
+    <p><b><span class='grn'>Задачи символни низове - в следващата тема</span> /<a href='#III' class='lnk'>III. Управляващи инструкции</a>/ </b></p>
     <p><b>Копиране на репозитори от github</b>:</p>
     <p>Отворете Codespaces, от миналия път.</p>
     <p>Създайте /<b>mkdir</b>/ директория <b>copy</b>, влезте в нея с <b>cd copy</b>      </p>
@@ -1255,9 +1255,7 @@ while ( true ) // <span class='red'>{</span> блок на while, повтаря
     <p>Относно побитовите оператори <b>ИЛИ </b>/OR/, <b>Изключващо ИЛИ</b> /XOR/, <b>И </b>/&amp;/
       - те могат да се използват за установяване на отделни битове или за прочитане
       на отделни битове. Битовете са номерирани от дясно наляво, като най-десния
-      бит е на позиция 0. Пример: Позиция <span class='red'>0</span>: 0000010
-      <span
-      class='red'>0</span>;Позиция <span class='red'>4</span>:<span class='red'> 
+      бит е на позиция 0. Пример: Позиция <span class='red'>0</span>: 0000010<span class='red'>0</span>;Позиция <span class='red'>4</span>:<span class='red'> 
       </span>000<span class='red'>0</span>0100; Позиция <span class='red'>7</span>:
         <span class='red'> 0</span>0000100. По надолу има примери как се използват:</p>
     <p><b>задача 1</b>: Число: 00000<span class='red'>1</span>00. прочетете бит 2 -
@@ -3414,7 +3412,7 @@ Console.WriteLine("2. Beer on hold:" + a); // Never reached
             на <b>GET</b> заявка към примерно <b>Web API</b> /Web Application
             Program Interface - стандартна услуга в интернет, която връща
             <b>JSON</b> низове от даден Web адрес - например
-            <a href='https://jsonplaceholder.typicode.com/posts/' target='_blank'>https://jsonplaceholder.typicode.com/posts/</a>
+            <a href='https://jsonplaceholder.typicode.com/posts/' target='_blank' class='lnk'>https://jsonplaceholder.typicode.com/posts/</a>
             - отворете го с мишката<b>!!!</b> / с помощта на обекта <b>HttpClient</b>
             и обработка на потенциални грешки <b>/exceptions/</b> с помощта
             на блок <b>try/catch/finally:</b></p>
@@ -3519,7 +3517,7 @@ using System.Text;
 // низ на различни езици /<b>UTF-8</b>/, който ще запишем във файл 
 string <b><span class='grn'>wStr</span></b> = &quot;Hold my beer, ビールを預けておいてください, Подержи мое пиво!&quot;;
 Console.WriteLine(&quot;Original String: &quot; + <b><span class='grn'>wStr</span></b>); // Показване на оригиналния низ
-string <b><span class='blu'>filePath </span></b>= &quot; <span class='blu'>output.txt</span>&quot;;
+string <b><span class='blu'>filePath </span></b>= &quot;<span class='blu'>output.txt</span>&quot;;
 // Записване на <b><span class='grn'>wStr </span></b>във файл с име <b><span class='blu'>output.txt</span></b>
 File.WriteAllText(<b><span class='blu'>filePath</span></b>, <b><span class='grn'>wStr</span></b>);
 
@@ -3807,7 +3805,7 @@ Console.WriteLine(&quot;Read String: &quot; + <b><span class='ora'>rStr</span></
             оформления, да подравнявате елементи и да контролирате тяхното
             позициониране в рамките на страницата.</p>
         <p><b>Bootstrap</b></p>
-        <p>Най-голямото предимство на <a href='https://getbootstrap.com/' target='_blank'>Bootstrap</a>  
+        <p>Най-голямото предимство на <a href='https://getbootstrap.com/' target='_blank' class='lnk'>Bootstrap</a>  
            е, че автоматично се включва във вашите проекти, ако са създадени с командата:</p>
 
 <pre class='pre'>
@@ -3907,7 +3905,7 @@ Console.WriteLine(&quot;Read String: &quot; + <b><span class='ora'>rStr</span></
         <hr>
           
         <p> 2. SignalR: Ще създадем приложение за онлайн чат, както е показано в това ръководство:
-            <a href="https://learn.microsoft.com/en-us/aspnet/core/tutorials/signalr" target='_blank'>Asp NetCore SignalR</a>
+            <a href="https://learn.microsoft.com/en-us/aspnet/core/tutorials/signalr" target='_blank' class='lnk'>Asp NetCore SignalR</a>
             За целта изпълнете следните команди в Терминал:  
         </p>
          
@@ -4075,13 +4073,13 @@ app.Run();
 &lt;/html&gt;
 </pre>        
         <p> 4. 
-            <a href="https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/?view=aspnetcore-7.0" target='_blank'>tutorial razor pages</a>
+            <a href="https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/?view=aspnetcore-7.0" target='_blank' class='lnk'>tutorial razor pages</a>
         </p>
         
         <hr>
         
         <p> 5.
-            <a href="https://dotnet.microsoft.com/en-us/learn/aspnet/blazor-tutorial/intro" target='_blank'>blazor - tutorial - intro</a>
+            <a href="https://dotnet.microsoft.com/en-us/learn/aspnet/blazor-tutorial/intro" target='_blank' class='lnk'>blazor - tutorial - intro</a>
         </p>
         
         
@@ -5129,7 +5127,7 @@ namespace YourNamespace
         <p><img src="../img/image012.jpg" class='img' alt='JSON Responce'></p>
 
 
-        <p>За повече информация, посетете: <a href='https://github.com/vuejs/petite-vue' target='_blank'>Petite Vue.js</a></p>
+        <p>За повече информация, посетете: <a href='https://github.com/vuejs/petite-vue' target='_blank' class='lnk'>Petite Vue.js</a></p>
         
         <hr>
         <img src='../img/image013.jpg' class='img' alt='Курс C#'>

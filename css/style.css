@@ -51,7 +51,6 @@ p {
 
 
 b {
-  /*font-weight: 900;*/
   font-weight: bold;
 } 
 
@@ -68,9 +67,15 @@ b {
 
 .pre * {font-family: 'mono', 'Courier New', Courier, monospace; font-size: 0.4rem; }
 
-p, a.lnk, b, span, td, th {
-  font-size: 0.6rem;            
+p, a.lnk, b, span, td, th, [href^="tel:"] {
+  font-size: 0.6rem;
 }  
+
+/* Safari, thank you :) */
+[href^="tel:"] {
+  text-decoration: none;  
+  color: white;
+}
 
 #content { background-color: black; color: white; /* text-align: justify;  */
            margin-right: 15%; margin-left: 15%; margin-bottom: 20px; padding-left:4%; padding-right:4%; 
@@ -94,7 +99,7 @@ a.lnk {
     color: hsla(0,0%,100%,.8)
 }
 
-a.lnk:hover{
+a.lnk:hover {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .5s linear infinite;}@keyframes shift {from {transform:translateX(-10px);}to {transform:translateX(0);}}%3C/style%3E%3Cpath fill='none' stroke='%2301b96b' stroke-width='0.5' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5' /%3E%3C/svg%3E");
   background-position: 0 100%;
   background-size: auto 36px;
@@ -152,13 +157,18 @@ hr {
   #content { 
     background-color: white; color: black;
   }
+  a.lnk {
+    color: black;
+  }
   ::selection {
     background-color: black;
     color: white;
   }
-  a.lnk {
-    color: black;
-  }
+  
+  /* Safari, thank you :) */
+  [href^="tel:"] {
+    color: black;    
+  } 
 }
 
 @media screen and (max-width: 992px) { 

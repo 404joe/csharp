@@ -1235,7 +1235,7 @@ Enter a number; enter 0 to exit
       manipulation or specific scenarios requiring bitwise operations.</p>
     <p>Regarding the bitwise operators <b>OR</b>, <b>XOR</b>, <b>AND</b> - they can be used to set individual bits or read 
       individual bits. Bits are numbered from right to left, with the rightmost bit at position 0. Example: 
-      Position <span class='red'>0</span>: 0000010 <span class='red'>0</span>; Position <span class='red'>4</span>: 
+      Position <span class='red'>0</span>: 0000010<span class='red'>0</span>; Position <span class='red'>4</span>: 
       000<span class='red'>0</span>0100; Position <span class='red'>7</span>: 0<span class='red'>0000100</span>. Below are 
       examples of their usage:</p>
       
@@ -3069,24 +3069,24 @@ Console.WriteLine("2. Beer on hold:" + a); // Never reached
 
 <pre class='pre'>
 using System;
-using System.Net.Http; // &lt;p&gt;Required for the &lt;b&gt;HttpClient&lt;/b&gt; object&lt;/p&gt;
+using System.Net.Http; // Required for the HttpClient object
 class Program
 {
-    // The &lt;b&gt;Main&lt;/b&gt; function is &lt;b&gt;async&lt;/b&gt; 
-    &lt;b&gt;&lt;span class='blu'&gt;static async System.Threading.Tasks.Task &lt;/span&gt;&lt;/b&gt;Main()
+    // The <b>Main</b> function is <b>async</b> 
+    <b><span class='blu'>static async System.Threading.Tasks.Task </span></b>Main()
     {
         HttpClient client = new HttpClient();
-        string url = &lt;span class='blu'&gt;"https://jsonplaceholder.typicode.com/posts"&lt;/span&gt;;
-        &lt;b&gt;try&lt;/b&gt;
+        string url = <span class='blu'>"https://jsonplaceholder.typicode.com/posts"</span>;
+        <b>try</b>
         {
-            string response = &lt;b&gt;&lt;span class='blu'&gt;await &lt;/span&gt;&lt;/b&gt;client.&lt;b&gt;GetStringAsync&lt;/b&gt;(url);
+            string response = <b><span class='blu'>await </span></b>client.<b>GetStringAsync</b>(url);
             Console.WriteLine("Response: " + response);
         }
-        &lt;b&gt;catch &lt;/b&gt;(HttpRequestException ex)
+        <b>catch</b> (HttpRequestException ex)
         {
             Console.WriteLine("An error occurred: " + ex.Message);
         }
-        &lt;b&gt;finally&lt;/b&gt;
+        <b>finally</b>
         {
             client.Dispose();
         }

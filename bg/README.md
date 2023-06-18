@@ -11,6 +11,8 @@
 3. Разгледайте всяка тема от съдържанието, и изпълнете упражненията.
 4. Примерите към темите са в директория [_examples](https://github.com/avrgeJoe/csharp/tree/master/_examples)
 
+Стартирайте Курса C# Turbo [ТУК](https://avrgejoe.github.io/csharp/)
+
 ## Съдържание на курса
 
 - [I. Въведение в курса](https://avrgejoe.github.io/csharp/bg/#I)
