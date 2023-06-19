@@ -17,9 +17,9 @@
   
   <div id='menu' class='menu'>
     <div class='progress-bar'>
-      <div id='scroll' class='progress-bar-fill' style='--progress:0%;'> </div>
+      <div id='scroll' class='progress-bar-fill pbzero'> </div>
     </div>
-    <nav data-scroll-header class='menunav'> <a id='menu-toggle' onclick='MainMenu();'>&#x2261;</a>
+    <nav data-scroll-header class='menunav no-print'> <a id='menu-toggle' onclick='MainMenu();'>&#x2261;</a>
       <!-- Menu &#x2261; &#x00D7; ≡ ˟ -->
       <ul data-gumshoe class='menuitems' id='toggled'>
         <li><a data-scroll href='#I'    onclick='closeMenu()' class='mnu'>I</a></li>
@@ -42,7 +42,7 @@
     
     <hr>
     
-    <img src='img/image013.jpg' class='img' alt='C# Turbo Course'>
+    <img src='img/image013.jpg' class='img no-print' alt='C# Turbo Course'>
     
     <hr>
     
@@ -63,9 +63,9 @@
       browsers, providing dynamic and interactive experiences.</p>
     
     <p><b>Network Stack: Backend/Middleware/Frontend</b></p>
-    <div style="width: 100%;">
-      <object style="width: 100%; height: auto;" data="img/image015.svg" type="image/svg+xml"></object>
-    </div>    
+    
+    
+    <object class='obsvg' title='Network Stack' aria-hidden="true" data='img/image015.svg' type='image/svg+xml'></object>
        
     <p><b>iOS</b>: Xamarin also allows developing applications for iOS using C# and .NET. It enables code 
       sharing between iOS, Android, and other platforms.</p>
@@ -4499,7 +4499,7 @@ namespace YourNamespace
     <p>For more information, visit: <a href='https://github.com/vuejs/petite-vue' target='_blank' class='lnk'>Petite Vue.js</a></p>
     
     <hr>
-    <img src='img/image013.jpg' class='img' alt='C# Turbo Course'>
+    <img src='img/image013.jpg' class='img no-print' alt='C# Turbo Course'>
     <hr>
     
     <p>&nbsp;</p>
@@ -4509,11 +4509,11 @@ namespace YourNamespace
   </div>  <!-- content -->
   
   <div class='cover'>
-    <canvas id='canvas'></canvas>
+    <canvas id='canvas' class='no-print'></canvas>
   </div>
   
   <div id='chevron'>
-    <div id='chev-inner'>
+    <div id='chev-inner' class='no-print'>
       <a data-scroll title='To Top' class='bounce' href='#top'> <span class='fa fa-chevron-up'></span> </a>
     </div>
   </div>

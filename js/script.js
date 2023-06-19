@@ -47,6 +47,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var cb = document.createElement('button');
     cb.innerHTML = copybtn;
     cb.classList.add('copy-button');
+    cb.classList.add('no-print');
+    cb.setAttribute('aria-label', 'Copy');
     
     cb.addEventListener('click', handleCopy );
     preTag.insertAdjacentElement('afterend', cb);
