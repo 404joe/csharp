@@ -4,49 +4,48 @@ namespace StudentExample
 {
 
 
-    class Student { // клас Student 
-        // полета
-        private string name; // private поле за името на студента
-        private int age; // private поле за възрастта на студента
+    class Student { // class Student 
+        // fields
+        private string name; // private field for the student's Name
+        private int age;     // private field for the student's Age
     
         // Constructors
-        public Student() { // constructor, който установява 
-                           // стойности по подразбиране на полетата
+        public Student() {   // constructor, sets values by default of the fields
             name = "Unknown";
             age = 0;
         }
     
-        public Student(string name, int age) { // Конструктор, който приема name /име/ и  
-                                                                    // age /възраст/ като аргументи /параметри/
-            this.name = name; // Използваме ключова дума "this" за сда се обърнем 
-                                          // към полето name на текущия обект
-            this.age = age; // Използваме ключова дума "this" за сда се обърнем 
-                                    // към полето age на текущия обект
+        public Student(string name, int age) { // Constructor that takes Name   
+                                               // and Age as arguments
+            this.name = name; // We use the keyword THIS 'this' to adress the  
+                              // field 'name' of the current object
+            this.age = age;   // We use the keyword THIS 'this' to adress the  
+                              // field 'age' of the current object
         }
     
         // Properties
-        public string Name { // свойство /property/ за достъп до полето Name - Име
-            get { return name; } // Getter метод, който втъща стойността на 
-                                            //полето name /име/
-            set { name = value; } // Setter метод за установяване на 
-                                            //  стойносттта на полето name /име/
+        public string Name {      // property to acess the field Name 
+            get { return name; }  // Getter method, that returns the value  
+                                  // of the field 'name'
+            set { name = value; } // Setter method to set the value of the
+                                  //  field 'name'
         }
     
-        public int Age { // public - свойство /property/ за достъп до полето age - възраст
-            get { return age; }   // Getter -метод, който втъща стойността на 
-                                            //полето age /възраст/
+        public int Age { // public - property to get acess to the field 'age'
+            get { return age; }   // Getter - method, that returns the value  
+                                  //of the field 'age'
             set { 
                 if (value >= 16)
                     age = value;
                 else
                     Console.WriteLine("Age must be 16 or greater");
-            } // Setter -метод за установяване на 
-                                            //  стойносттта на полето age /възраст/ 
+            } // Setter -method to set the value of the field 'age' 
+                                             
         }
     
-        // Методи
-        public void PrintInfo() { // public метод, който извежда на екрана 
-                                                // име и възраст на студента
+        // Methods
+        public void PrintInfo() { // public method, that prints to  
+                                  // the screen the name and age of the student
             Console.WriteLine($"Name: {name}");
             Console.WriteLine($"Age: {age}");
         }
@@ -57,15 +56,15 @@ namespace StudentExample
     {
         static void Main(string[] args)
         {
-            // създаване на нов обект Student, име - "John Doe"
+            // creation of new object Student, 'name' - "John Doe"
             Student myStudent = new Student("John Doe", 15);
             
-            // извеждаме информация за студента на екрана
+            // output to the screen information about the student John Doe:
             myStudent.PrintInfo();
             
-            myStudent.Age = 13; // извикване на setter метода, за установяване на неправилна стойност
+            myStudent.Age = 13; // calling the setter method, to set a wrong value
 
-            // установяване на 'правилна' стойност за възрастта на студентa ( >= 16 ) чрез setter
+            // setting a 'right' value about the student's age ( >= 16 ) throught setter
             myStudent.Age = 18;
             
             myStudent.PrintInfo();

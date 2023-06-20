@@ -6,13 +6,6 @@ namespace sql_webapp.Pages;
 
 public class IndexModel : PageModel
 {
-    /*private readonly ILogger<IndexModel> _logger; // ---
-
-    public IndexModel(ILogger<IndexModel> logger)
-    {
-        _logger = logger;
-    }*/
-
         
     public List<string> Columns { get; set; }  = new List<string>();
     public List<List<string>> Rows { get; set; }  = new List<List<string>>();

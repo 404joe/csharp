@@ -102,7 +102,7 @@ var defaults = {
 	topOnEmptyHash: true,
 
 	// Speed & Duration
-	speed: 50,
+	speed: 25,
 	speedAsDuration: false,
 	durationMax: null,
 	durationMin: null,

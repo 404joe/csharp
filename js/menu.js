@@ -1,11 +1,11 @@
 var initscroll = function () {
 	gumshoe.init({
-		offset: 50
+		offset: 100 
 	});
 	// gumshoe.setDistances();
 
 	var scroll = new SmoothScroll('a[href*="#"]', {
-		offset: 50 // header: '[data-scroll-header]'    
+		offset: 100 // header: '[data-scroll-header]'    
 	});	
 }
 

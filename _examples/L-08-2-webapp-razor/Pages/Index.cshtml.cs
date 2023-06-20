@@ -16,24 +16,6 @@ public class IndexModel : PageModel
     // [BindProperty(SupportsGet = true)]
     public string Msg { set; get; } = ""; /* *** */
     public string MyVariable { get; set; } = ""; 
-    /*public IndexModel(ILogger<IndexModel> logger)
-    {
-        _logger = logger;
-
-        Msg = "Hold my beer 000"; /* *** * /
-        countplus = 15;        
-    }*/
-
-    /*public IActionResult MyFunction()
-    {
-          /* *** * /
-            countplus ++;
-            
-            Msg = "Hold my beer x2 x4 " + countplus;
-            Console.WriteLine("---MSG change --- -> post back");
-            return  Page(); //RedirectToPage();//  //Partial("IndexModel");
-        
-    }*/
 
     public IActionResult OnPost(){  
             countplus ++;

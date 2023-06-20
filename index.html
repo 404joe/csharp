@@ -49,7 +49,7 @@
     <h2 id='I'>I. Introduction to the Course</h2>
     
     <p><b>.NET supports various types of applications:</b></p>
-    <p><b>Desktop</b> Desktop Applications: These are traditional applications that run on Windows-based desktop 
+    <p><b>Desktop</b> Applications: These are traditional applications that run on Windows-based desktop 
       platforms. They provide a rich user interface and can be built using technologies like Windows Forms 
       (WinForms) or Windows Presentation Foundation (WPF).</p>
     <p>Applications for <b>macOS</b>: .NET supports the development of applications for 
@@ -152,7 +152,7 @@
 Result: Now listening on: http://localhost:5234
 </pre>
     
-    <p>The Kestrel server of ASP.NET Core is automatically started and begins listening on port 5234 (or any other port in the 
+    <p>The <b>Nginx</b> server of ASP.NET Core is automatically started and begins listening on port 5234 (or any other port in the 
       5xxx range). You can open a web browser and access the pages (by clicking the localhost link mentioned above) that this 
       server serves, as shown in the following figure.</p>
     
@@ -201,11 +201,11 @@ $ dotnet publish -c Release -r ubuntu-x64
     <p>5. Return to Codespaces @ <a href='https://github.com/codespaces' target='_blank' class='lnk'>https://github.com/codespaces</a> </p>
     <p>6. Under Owned by - your username - you will find the new template. Click on the ellipsis /<b>...</b>/ next to it, choose 
       <b>Rename</b>, and rename it to <b>csharp.</b> 
-    <p>6. Click on <b>csharp</b> - with the left mouse button.</p>    
-    <p>7. On the left side, select the Extensions square. In the Extension Marketplace search, type "C#" and select <b>C# for 
+    <p>7. Click on <b>csharp</b> - with the left mouse button.</p>    
+    <p>8. On the left side, select the Extensions square. In the Extension Marketplace search, type "C#" and select <b>C# for 
       Visual Studio Code (powered by OmniSharp)</b>.</p>
-    <p>8. Click the <b>[Install]</b> button</p>
-    <p>9. From the <b>&#x2261;</b> menu in the top-left corner, choose <b>Terminal/New terminal</b></p>
+    <p>9. Click the <b>[Install]</b> button</p>
+    <p>10. From the <b>&#x2261;</b> menu in the top-left corner, choose <b>Terminal/New terminal</b></p>
     <p><img src='img/image002.jpg' class='img' alt='Main Menu'></p>
     <p>Note: In the terminal, you can enter the following commands /as well as many others/:</p>
 <pre class='pre'>
@@ -233,7 +233,7 @@ drwxr-xrwx+ 5 codespace root      4096 May 12 18:59 ..
 drwxrwxrwx+ 2 codespace codespace 4096 May 12 19:13 <b>hold</b>
 @avrgeJoe ➜/workspaces/codespaces-blank $ 
 </pre>
-    <p>10. Enter the "hold" directory /<b>cd hold</b>/ </p>
+    <p>11. Enter the "hold" directory /<b>cd hold</b>/ </p>
 <pre class='pre'>
 @avrgeJoe ➜/workspaces/codespaces-blank $ <b>cd hold</b>
 @avrgeJoe ➜/workspaces/codespaces-blank/hold $ <b>ls -la</b>
@@ -245,7 +245,7 @@ drwxrwxrwx+ 2 codespace codespace 4096 May 14 14:58 .
 drwxrwxrwx+ 7 codespace root      4096 May 14 14:58 ..
 @avrgeJoe  ➜/workspaces/codespaces-blank/hold $ 
 </pre>
-    <p>11. In the <b>hold</b> directory, execute: <b>dotnet new console:</b></p>
+    <p>12. In the <b>hold</b> directory, execute: <b>dotnet new console:</b></p>
     <p>@avrgeJoe  ➜/workspaces/codespaces-blank/hold $ dotnet new console</p>
     <p>Result:</p>
 <pre class='pre'>
@@ -274,9 +274,9 @@ drwxrwxrwx+ 2 codespace codespace 4096 May 14 15:00 obj
 @avrgeJoe  ➜/workspaces/codespaces-blank/hold $ 
 </pre>
 
-    <p><b>12. The mentioned files appear in the top left:</b></p>
+    <p><b>13. The mentioned files appear in the top left:</b></p>
     <p><img src='img/image003.jpg' class='img' alt='File Tree'></p>
-    <p>13. You go back in the terminal to compile the project:</p>
+    <p>14. You go back in the terminal to compile the project:</p>
     
     <p>@avrgeJoe ➜/workspaces/codespaces-blank/hold $ <b>dotnet build</b></p>
     
@@ -294,7 +294,7 @@ Time Elapsed 00:00:05.21
 @avrgeJoe ➜/workspaces/codespaces-blank/hold $ 
 </pre>
 
-    <p>14. <b>dotnet run</b> to run it</p>
+    <p>15. <b>dotnet run</b> to run it</p>
     <p>@avrgeJoe ➜/workspaces/codespaces-blank/hold $ <b>dotnet run</b></p>
     <p><b>Hello, World!<span class='grn'>&lt;- Result from the program execution</span></b></p>
     <p>@avrgeJoe ➜ /workspaces/codespaces-blank/hold $ </p>
@@ -326,7 +326,7 @@ namespace MyApplication
 <pre class='pre'>
 <b>dotnet publish -c Release -r win-x64</b>
 </pre>
-    <p><b>Resulta is in the directory /workspaces/codespaces-blank/hold/bin/net7.0/win-x64/publish/hold.exe</b></p>
+    <p><b>The result is in the directory /workspaces/codespaces-blank/hold/bin/net7.0/win-x64/publish/hold.exe</b></p>
     <p><b>/On the left side of the screen/</b></p>
     <p><img src='img/image004.jpg' class='img narrow' alt='Exe Path'></p>
     <p>The executable .exe file can be downloaded to your local computer and run locally by right-clicking on the 
@@ -2025,8 +2025,7 @@ class Program
     <p>14. Calculate the arithmetic mean of all elements in the jagged array and print the result.</p>
     <p>15. Find the row with the largest sum of elements in the jagged array and print the index of that row.</p>
     <p>16. Sort the elements in each row of the jagged array in ascending order.</p>
-    <p>17. Create a jagged array of strings
-    <p>18. Find the row with the most elements in the jagged array and print its index.</p>
+    <p>17. Create a jagged array of strings. Print all strings in the array that start with the letter 'A'.
     <p><b>Hint</b>: Use the <b>StartsWith</b> method on the <b>string</b> object:</p>
 
 <pre class='pre'>
@@ -2036,7 +2035,11 @@ if (str.<b>StartsWith</b>('H'))
 {
     Console.WriteLine("String starts with 'H'");
 }
-</pre>
+</pre>    
+    
+    <p>18. Find the row with the most elements in the jagged array and print its index.</p>
+
+    <hr>  
         
     <h2 id='V'>V. Object-Oriented Programming Basics</h2>
     

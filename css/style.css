@@ -37,16 +37,17 @@ td, th { border: 1px solid white; word-break: break-word; word-wrap: break-word;
   padding: 0;
   fill: #D19049; /* .ora */
   margin-top: 4px;
-  font-size: 14px;
+  /*font-size: 1rem; */
+  
+  -webkit-appearance: none; 
 }
 
 .copy-button:hover svg path {
   fill: green;
-}
-
+} 
 
 p {
-  padding-top: 12px;
+  padding-top: 0.5rem; /*12px;*/
 } 
 
 
@@ -119,7 +120,7 @@ a.lnk:hover {
 }
 .progress-bar-fill {
   width: 100%;
-  height: 0.05em;
+  height: 3px; /*0.05em;*/
   background-color: #6678ff;
   position: absolute;
   transform: scaleX(var(--progress));
@@ -176,7 +177,7 @@ hr {
   
   /* Safari, thank you :) */
   [href^="tel:"] {
-    color: black;    
+    color: black;
   } 
 }
 
@@ -185,16 +186,30 @@ hr {
   * { font-size: 1.75rem; }
 }
 
+
+@media screen and (min-width: 1300px) {
+   * { font-size: 2.75rem; }
+}
+
+@media screen and (min-width: 1600px) {
+   * { font-size: 3.75rem; }
+}
+
+@media screen and (min-width: 2000px) {
+   * { font-size: 5.75rem; }
+}
+
+
 @media print {
-  h1 { font-size: 0.8rem; }
-  h2 { font-size: 0.5rem; }
+  /*h1 { font-size: 0.8rem; }
+  h2 { font-size: 0.5rem; }*/
   h1, h2 { padding-top: 5px; padding-bottom: 5px; }
   
   hr     { margin-bottom: 5px; margin-top: 5px; }
   
-  p, a.lnk, b, span, td, th, [href^="tel:"] { font-size : 0.3rem; }
+  /*p, a.lnk, b, span, td, th, [href^="tel:"] { font-size : 0.3rem; }*/
 
-  .pre, .pre * { font-size: 0.2rem; } 
+  /*.pre, .pre * { font-size: 0.2rem; } */
   
   .no-print { display: none; }
   
