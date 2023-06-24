@@ -1,10 +1,10 @@
 ## Clone the repo:
 
-mkdir csharp
-cd csharp
+mkdir project
+cd project
 git init
-git clone https://github.com/avrgeJoe/csharp.git
-cd csharp/
+git clone https://github.com/YourUserN/project.git
+cd project/
 
 ## Do stuff -> change code; /work it/
 ## If code on master was changed too: 
@@ -23,13 +23,15 @@ cd ~/.ssh
 ssh-keygen -t rsa -b 4096 -C "git@github.com"
 cat id_rsa.pub >> authorized_keys
 
-### Then copy paster .pub file in github profile/ssh keys, start to copy&paste from "rsa-" :
+## "cd" back to your "project" dir
+
+### Then copy paster .pub file in github.com Profile/Settings/SSH/SSH/New SSH keys, start to copy&paste from "rsa-" :
 cat id_rsa.pub
 
 # It fucks again, then set the SSH origin 
 git remote -v
 git remote remove origin
-git remote add origin git@github.com:avrgeJoe/csharp.git
+git remote add origin git@github.com:YourUserN/project.git
 
 git push --set-upstream origin master
 
