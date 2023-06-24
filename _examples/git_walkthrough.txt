@@ -1,0 +1,36 @@
+## Clone the repo:
+
+mkdir csharp
+cd csharp
+git init
+git clone https://github.com/avrgeJoe/csharp.git
+cd csharp/
+
+## Do stuff -> change code; /work it/
+## If code on master was changed too: 
+
+# git pull origin master
+
+## Then add the changes:
+git add .
+git commit -m "msg"
+
+git push 
+
+### It fucks, well, then do the SSH cert:
+### Create & add RSA cert to bash
+cd ~/.ssh
+ssh-keygen -t rsa -b 4096 -C "git@github.com"
+cat id_rsa.pub >> authorized_keys
+
+### Then copy paster .pub file in github profile/ssh keys, start to copy&paste from "rsa-" :
+cat id_rsa.pub
+
+# It fucks again, then set the SSH origin 
+git remote -v
+git remote remove origin
+git remote add origin git@github.com:avrgeJoe/csharp.git
+
+git push --set-upstream origin master
+
+## Done
