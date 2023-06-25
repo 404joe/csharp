@@ -150,17 +150,15 @@
       като автоматично на сървъра на Github Codespaces се изтеглят и инсталират всички
       необходими <b>NuGet</b> пакети. За се види списък със зависимости от библиотеки
       и техните версии, използвани от приложението, може да се провери файла project.assets.json
-      в поддиректорията obj. Ако не се използва опцията –output (или -o за съкратено
+      в поддиректорията obj. Ако не се използва опцията <b>-–output</b> (или <b>-o</b> за съкратено
       изписване на име на директория), файловете се генерират в текущата директория.</p>
     <p><b>Създаване
       на Web Application</b></p>
     <p>Подобно на създаването на конзолно приложение, .NET CLI. може да се използва,
-      за създаване на уеб приложение. Ако се въведе dotnet new, излиза списък с наличните
-      шаблони. Командата</p>
-    <p><b>dotnet new webapp</b></p>
-    <p>създава ново уеб приложение с използването на технологиите ASP.NET Core и Razor
-      Pages. Създаденият по този начин проектен файл включва Microsoft.NET.Sdk.Web
-      SDK. Този SDK (Software Development Kit) съдържа инструменти и разширения,
+      за създаване на уеб приложение. Ако се въведе <b>dotnet new</b>, излиза списък с наличните
+      шаблони. Командата <b>dotnet new webapp</b> създава ново уеб приложение с използването на 
+      технологиите ASP.NET Core и Razor Pages. Създаденият по този начин проектен файл включва 
+      Microsoft.NET.Sdk.Web SDK. Този SDK (Software Development Kit) съдържа инструменти и разширения,
       които са необходими за създаване на уеб приложения и услуги:</p>
 <pre class='pre'>
 @avrgeJoe ➜ /workspaces/codespaces-blank/holdmybeer $ <b>cd ..</b>
@@ -354,12 +352,17 @@ namespace MyApplication
     <p><b><span class='red'>!!!</span></b> Имената на файловете и директориите са чуствителни
       към малка и голяма буква, файла <b><span class='red'>P</span>rogram.cs</b>
       е различен от файла <b><span class='red'>p</span>rogram.cs</b> <b><span class='red'>!!!</span></b></p>
+    
     <p>@avrgeJoe $ <b>grep -rnw <span class='red'>.</span> -e '<span class='blu'>Main</span>'
-      --include \*<span class='grn'>.cs</span>   </b>➜<b> </b>търси във всички поддиректории
-      на текущата ( <span class='red'>.</span> ), във всички файлове с разширение
-      <b><span class='grn'>.cs</span></b><span class='grn'> </span>реда (<b><span class='lil'>7</span></b>)
-      на който се намира търсеният низ: <b><span class='blu'>Main</span></b></p>
+      --include \*<span class='grn'>.cs</span>   </b>➜<b> </b> За да търсите реда, съдържащ символния 
+      низ <b><span class='blu'>Main</span></b>
+      във всички поддиректории на текущата директория ( <span class='red'>.</span>), във всички файлове с
+      разширението <b><span class='grn'>.cs</span></b><span class='grn'></span> показва реда
+      (<b><span class='lil'>7</span></b>), ако търсеният низ бъде намерен: </p>  
+
     <p>@avrgeJoe➜/workspaces/codespaces-blank/hold $ <b>grep -rnw . -e 'Main' --include \*.cs</b></p>
+
+    
     <p>Резултат:</p>
 <pre class='pre'>
 ./Program.cs:<b><span class='lil'>7</span></b>:        static void Main(string[] args)
@@ -5135,14 +5138,10 @@ namespace YourNamespace
         
         <p>&nbsp;</p>
 
-    
-
   </div>  <!-- content -->
   
-  <div class='cover'>
-    <canvas id='canvas' class='no-print'></canvas>
-  </div>
-  
+  <canvas id='canvas' class='no-print'></canvas>
+ 
   <div id='chevron'>
     <div id='chev-inner' class='no-print'>
       <a data-scroll title='To Top' class='bounce' href='#top'> <span class='fa fa-chevron-up'></span> </a>

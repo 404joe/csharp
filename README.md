@@ -2,31 +2,31 @@
 
 Welcome to the C# Turbo Course! This course is designed to provide you with a comprehensive introduction to C# programming. Whether you are a beginner or have some experience in programming, this course will help you develop a solid foundation in C# and enable you to create your own applications.
 
-Start the C# Turbo Course [HERE](https://avrgejoe.github.io/csharp/)
+Start the C# Turbo Course [HERE](https://404joe.github.io/csharp/)
 
-For Bulgarian Language press [#ONE-1](https://github.com/avrgeJoe/csharp/tree/master/bg)
+For Bulgarian Language press [#ONE-1](https://github.com/404joe/csharp/tree/master/bg)
 
 ## Getting Started with the Course
 
 To get started with the course, follow these steps:
 
-1. Clone or download this [repository](https://github.com/avrgeJoe/csharp/archive/refs/heads/master.zip).
+1. Clone or download this [repository](https://github.com/404joe/csharp/archive/refs/heads/master.zip).
 2. Open the course materials in your preferred IDE, text editor, or [Github Codespaces](https://github.com/codespaces).
 3. Explore each topic in the content and complete the exercises.
-4. The examples related to the topics can be found in the [_examples](https://github.com/avrgeJoe/csharp/tree/master/_examples) directory.
+4. The examples related to the topics can be found in the [_examples](https://github.com/404joe/csharp/tree/master/_examples) directory.
 
 ## Course Contents
 
-- [I. Introduction to the Course](https://avrgejoe.github.io/csharp/#I)
-- [II. Variables](https://avrgejoe.github.io/csharp/#II)
-- [III. Control Statements: if × for](https://avrgejoe.github.io/csharp/#III)
-- [IV. Arrays](https://avrgejoe.github.io/csharp/#IV)
-- [V. Object-Oriented Basics](https://avrgejoe.github.io/csharp/#V)
-- [VI. OOP - Advanced Topics](https://avrgejoe.github.io/csharp/#VI)
-- [VII. Events, Exceptions, Files](https://avrgejoe.github.io/csharp/#VII)
-- [VIII. Web Applications: Razor × Blazor × SignalR](https://avrgejoe.github.io/csharp/#VIII)
-- [IX. Databases and SQL](https://avrgejoe.github.io/csharp/#IX)
-- [X. C# WebApp × SQL Databases](https://avrgejoe.github.io/csharp/#X)
+- [I. Introduction to the Course](https://404joe.github.io/csharp/#I)
+- [II. Variables](https://404joe.github.io/csharp/#II)
+- [III. Control Statements: if × for](https://404joe.github.io/csharp/#III)
+- [IV. Arrays](https://404joe.github.io/csharp/#IV)
+- [V. Object-Oriented Basics](https://404joe.github.io/csharp/#V)
+- [VI. OOP - Advanced Topics](https://404joe.github.io/csharp/#VI)
+- [VII. Events, Exceptions, Files](https://404joe.github.io/csharp/#VII)
+- [VIII. Web Applications: Razor × Blazor × SignalR](https://404joe.github.io/csharp/#VIII)
+- [IX. Databases and SQL](https://404joe.github.io/csharp/#IX)
+- [X. C# WebApp × SQL Databases](https://404joe.github.io/csharp/#X)
 
 Each topic is accompanied by practical examples and exercises to reinforce your knowledge. By the end of this course, you will have a solid understanding of the fundamentals of C# and be ready to tackle more advanced topics.
 
@@ -46,6 +46,8 @@ We look forward to your contributions and feedback.
 ## Credits
 
 This course was created with the assistance of [ChatGPT](https://chat.openai.com/), an AI language model developed by [OpenAI](https://openai.com/). ChatGPT contributed to the development and provided useful advice and recommendations regarding the course.
+
+Inspiration /the-theme/: [Meritt Thomas](https://4kwallpapers.com/technology/windows-10-dark-blue-5k-8k-733.html)
 
 Happy coding!
 

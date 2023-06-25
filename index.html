@@ -7,14 +7,14 @@
   <meta name="viewport"  content="width=device-width, initial-scale=1.0">
   <link rel='preload'    href='font/lato.woff2' as='font' type='font/woff2' crossorigin>
   <link rel='preload'    href='font/mono.woff2' as='font' type='font/woff2' crossorigin>
-  <!--script>console.clear();</script--><!-- cleanup console on startup -->
+  <script>console.clear();</script> <!-- cleanup console on startup -->
   <link rel='stylesheet' href='css/font.css'>
   <link rel='stylesheet' href='css/style.css'>
   <link rel='stylesheet' href='css/menu.css'>
 </head>
 
 <body id='top' onload='initscroll();'>
-  
+
   <div id='menu' class='menu'>
     <div class='progress-bar'>
       <div id='scroll' class='progress-bar-fill pbzero'> </div>
@@ -348,7 +348,7 @@ namespace MyApplication
       To search for the line containing the symbol string <b><span class='blu'>Main</span></b>
       in all subdirectories of the current directory ( <span class='red'>.</span> ), in all the files with 
       the extension <b><span class='grn'>.cs</span></b><span class='grn'></span> displays the line 
-      (<b><span class='lil'>7</span></b>), the searched string is found: </p>
+      (<b><span class='lil'>7</span></b>), if the searched string is found: </p>
       
     <p>@avrgeJoe➜/workspaces/codespaces-blank/hold $ <b>grep -rnw . -e 'Main' --include \*.cs</b></p>
     <p>Result:</p>
@@ -4507,25 +4507,22 @@ namespace YourNamespace
     
     <p>&nbsp;</p>
 
-    
-
   </div>  <!-- content -->
   
-  <div class='cover'>
-    <canvas id='canvas' class='no-print'></canvas>
-  </div>
-  
+  <canvas id='canvas' class='no-print'></canvas>
+    
   <div id='chevron'>
     <div id='chev-inner' class='no-print'>
       <a data-scroll title='To Top' class='bounce' href='#top'> <span class='fa fa-chevron-up'></span> </a>
     </div>
   </div>
-  
+ 
   <script src='js/gumshoe.js'></script>
   <script src='js/smooth-scroll.js'></script>
   <script src='js/menu.js'></script>
   <script src='js/script.js'></script>
   <script src='js/shader.js'></script>
+  
   
 </body>
 

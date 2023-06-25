@@ -1,38 +1,47 @@
-## Clone the repo:
+### I. Prepare git settings
 
-mkdir project
-cd project
-git init
-git clone https://github.com/YourUserN/project.git
-cd project/
+### fix the author unknown err msg:
+# git config user.name "404joe" 
+# git config user.email "git@github.com"
 
-## Do stuff -> change code; /work it/
-## If code on master was changed too: 
-
-# git pull origin master
-
-## Then add the changes:
-git add .
-git commit -m "msg"
-
-git push 
-
-### It fucks, well, then do the SSH cert:
 ### Create & add RSA cert to bash
-cd ~/.ssh
-ssh-keygen -t rsa -b 4096 -C "git@github.com"
-cat id_rsa.pub >> authorized_keys
+# cd ~/.ssh
+# ssh-keygen -t rsa -b 4096 -C "git@github.com"
+# cat id_rsa.pub >> authorized_keys
+### "cd" back to your "project" dir
+#cat ~/.ssh/id_rsa.pub 
+### Then copy paster .pub file in github.com Profile/Settings/SSH/SSH/New SSH keys, start to copy&paste from "rsa-"
 
-## "cd" back to your "project" dir
-
-### Then copy paster .pub file in github.com Profile/Settings/SSH/SSH/New SSH keys, start to copy&paste from "rsa-" :
-cat id_rsa.pub
-
-# It fucks again, then set the SSH origin 
+# Set the SSH origin to push through SSH
 git remote -v
 git remote remove origin
 git remote add origin git@github.com:YourUserN/project.git
 
-git push --set-upstream origin master
+### II. Make directory for the git repo:
+mkdir project
+cd project
+git init 
 
-## Done
+### Clone the repo:
+
+mkdir project
+git clone https://github.com/YourUserN/project.git
+cd project/
+
+### III. Do stuff -> change code; /work it/
+### like go to d:\git\project\ on local or remote and change 
+### files, ... replace files, ... add new files or else ...
+### If code on master was changed too: 
+# git pull origin master
+
+### IV. Then add the changes:
+git add .
+git commit -m "commit message"
+git show
+
+### V. Push the update to the server
+git push
+# git push --set-upstream origin master
+# git push -f --set-upstream origin master
+
+## VI. Done

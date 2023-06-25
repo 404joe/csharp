@@ -4,6 +4,7 @@
 	bottom: 0;
 	text-decoration: none;
 }
+
 /*
 .bounce:hover {
 	animation: none;
@@ -23,7 +24,6 @@
 
 .fa {
 	font-size: 1.5rem;
-	/*margin: 20px 4px;*/
   color: white;
   animation: all 0.3 ease;
 }
@@ -34,16 +34,14 @@
 
 #chevron {
 	position: absolute; 
-	/*bottom: 0;*/  
 	left: 50%; 
 	text-align: center; 
-	/*padding: 20px;*/
 }
+
 #chev-inner {
 	position: absolute; 
 	bottom: 0; 
-	/*left: -50%;	*/
-  transform: translateX(-50%);  
+  transform: translateX(-50%);
 }
 
 .fa-chevron-up:before {
@@ -52,7 +50,6 @@
 	content: '';
 	display: inline-block;
 	height: 0.45em;
-	/*left: 0.15em;*/
 	position: relative;
 	top: 0.15em;
 	transform: rotate(-45deg);
@@ -63,32 +60,24 @@
 
 
 /* menu */
-div.menu {
-	background : white;
-	overflow   : hidden;
-	display	   : block;        
-	position   : fixed;
-	top        : 0;
-	left       : 0;
-	right      : 0;
-	z-index    : 2;
+#menu {
+  position: fixed;
+  top: 0;
+  width: 100%;  
+  z-index    : 2;
+  background : white;
 }
 
-
-
-/* * * * * * * context button  * * * * * *  */
+/*  * * * * * * context button  * * * * * *  */
 #menu-toggle {
 	display	: block;
 	float	: left;
-	/*color	: black;*/
 	text-decoration: none;
-	padding	: 0.5rem; /* 11px */
-	margin	: 0 0.5rem; /*0 16px 0 16px;*/
+	padding	: 0.5rem; 
+	margin	: 0 0.5rem; 
 	font-weight: bold;
-	/*font-size: 22px;*/
-  font-size: 1rem;
-  
-	cursor: default;
+	font-size: 1rem;
+  cursor: default;
 }
 
 
@@ -129,7 +118,6 @@ ul.menuitems li a {
 
 ul.menuitems li a.active {
   background: black; 
-	/*background: rgba(0, 0, 0, 0.5);*/
 	color: white;
 }
 
@@ -176,12 +164,6 @@ ul.menuitems li a:hover {
 }
 
 
-
-
-
-
-
-
 /* 8< - - - - - */
 
 /*
@@ -191,8 +173,9 @@ nav.menunav {
   top: 0;  
 } */
 
+
 /* media queries 568 768 */
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 668px) { /* 568px */
 	#menu-toggle {
 		display: none;
 	}
