@@ -131,7 +131,7 @@ ul.menuitems li a:hover {
 
 @media (prefers-color-scheme: light) {
 
-  div.menu {
+  #menu {
     background : black;
   }
   

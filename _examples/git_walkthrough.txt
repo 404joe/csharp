@@ -1,8 +1,8 @@
 ### I. Prepare git settings
 
 ### fix the author unknown err msg:
-# git config user.name "404joe" 
-# git config user.email "git@github.com"
+# git config --global user.name "404joe" 
+# git config --global user.email "git@github.com"
 
 ### Create & add RSA cert to bash
 # cd ~/.ssh

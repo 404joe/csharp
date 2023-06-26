@@ -47,7 +47,7 @@ We look forward to your contributions and feedback.
 
 This course was created with the assistance of [ChatGPT](https://chat.openai.com/), an AI language model developed by [OpenAI](https://openai.com/). ChatGPT contributed to the development and provided useful advice and recommendations regarding the course.
 
-Inspiration /the-theme/: [Meritt Thomas](https://4kwallpapers.com/technology/windows-10-dark-blue-5k-8k-733.html)
+Inspiration for the theme by: [Meritt Thomas](https://4kwallpapers.com/technology/windows-10-dark-blue-5k-8k-733.html)
 
 Happy coding!
 
