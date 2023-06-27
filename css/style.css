@@ -167,11 +167,17 @@ hr {
 
 @media (prefers-color-scheme: light) {
   #content { 
-    background-color: white; color: black;
+    background-color : white; color: black;
   }
+  
   a.lnk {
-    color: black;
+    color : black;
   }
+  
+  .pre {
+    border : 1px solid black;
+  }
+  
   ::selection {
     background-color : black;
     color            : white;
