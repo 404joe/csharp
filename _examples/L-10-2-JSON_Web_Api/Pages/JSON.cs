@@ -11,7 +11,7 @@ namespace YourNamespace
         public IActionResult Get()
         {
 
-            string jsonRes = // "" -> в .NET шаблона се пише "", в браузера излиза " / " escaping /
+            string jsonRes = // "" -> Quote Escaping, in the .NET template you write double "", in the browser appears a single "
                 @"[{""StudentID"":1022,""ClassID"":""101-07"",""Advisor"":""Jones"",""Room"":412,""Dept"":42},
                    {""StudentID"":1022,""ClassID"":""143-01"",""Advisor"":""Jones"",""Room"":412,""Dept"":42},
                    {""StudentID"":1022,""ClassID"":""159-02"",""Advisor"":""Jones"",""Room"":412,""Dept"":42},
