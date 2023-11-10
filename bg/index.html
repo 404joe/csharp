@@ -144,9 +144,9 @@
       лесен начин за създаване на приложение от вида "Hello World!". Просто трябва
       се въведе следната команда, за да бъде създадено конзолно приложение:</p>
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>mkdir holdmybeer</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>cd holdmybeer</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank/holdmybeer $ <b>dotnet new console</b>
+@404joe ➜ /workspaces/codespaces-blank $ <b>mkdir holdmybeer</b>
+@404joe ➜ /workspaces/codespaces-blank $ <b>cd holdmybeer</b>
+@404joe ➜ /workspaces/codespaces-blank/holdmybeer $ <b>dotnet new console</b>
 </pre>
     <p>Тази команда създава нов проект - файла <b>holdmybeer.csproj</b> в директорията
       <b>holdmybeer</b>и добавя файл с изходния код на име <b>Program.cs</b>. Командата
@@ -165,11 +165,11 @@
       Microsoft.NET.Sdk.Web SDK. Този SDK (Software Development Kit) съдържа инструменти и разширения,
       които са необходими за създаване на уеб приложения и услуги:</p>
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank/holdmybeer $ <b>cd ..</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>mkdir webapp</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>cd webapp</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank/webapp $ <b>dotnet new webapp</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank/webapp $ <b>dotnet run</b>
+@404joe ➜ /workspaces/codespaces-blank/holdmybeer $ <b>cd ..</b>
+@404joe ➜ /workspaces/codespaces-blank $ <b>mkdir webapp</b>
+@404joe ➜ /workspaces/codespaces-blank $ <b>cd webapp</b>
+@404joe ➜ /workspaces/codespaces-blank/webapp $ <b>dotnet new webapp</b>
+@404joe ➜ /workspaces/codespaces-blank/webapp $ <b>dotnet run</b>
 
 Резултат: Now listening on: http://localhost:5234
 </pre>
@@ -178,7 +178,7 @@
       /ако кликнете линка localhost по-горе/, които този сървър връща, както е показано
       на следната фигура</p>
     <p><img src='../img/image001.jpg' class='img' alt='Web App'></p>
-    <p>Фигура :NN</p>
+    
     <p><b>Self-Contained Deployments</b></p>
     <p>Самостоятелните внедрявания се отнасят до модел на внедряване /доставка на изпълнимия
       файл до потребителя/, при който приложението и всичките му зависимости са обединени
@@ -201,39 +201,40 @@ $ dotnet publish -c Release -r ubuntu-x64
     <p>Ключовите думи са запазени думи в езика, и не могат да бъдат използвани за друго,
       освен като ключови думи; тоест имената на класовете, обектите, методите, променливите
       трябва да са различни. Това са думите от следния спсък:</p>
-    <p>abstract as base bool break byte case catch char checked class const continue
+    <p><b>abstract as base bool break byte case catch char checked class const continue
       decimal default delegate do double else enum event explicit extern false finally
       fixed float for foreach goto if implicit in int interface internal is lock
       long namespace new null object operator out override params private protected
       public readonly ref return sbyte sealed short sizeof stackalloc static string
       struct switch this throw true try typeof uint ulong unchecked unsafe ushort
-      using virtual void volatile while</p>
+      using virtual void volatile while</b></p>
     <hr>
     <p><b>Задачи</b></p>
     <p>1. Направете си акаунт в gbithub:
       <a href='https://github.com/signup' target='_blank' class='lnk'>https://github.com/signup</a>
     </p>
-    <p>1a. Влезте в акаунта си, и създайте ново Repository /сорс-код на проект/
+    <p>2. Влезте в акаунта си, и създайте ново Repository /сорс-код на проект/
       <a href='https://github.com/new' target='_blank' class='lnk'>https://github.com/new</a>,
-      именовайте го csharp, или както желаете
+      именовайте го csharp, или както желаете. Качете празен файл file.txt, създаден с Notepad на вашия Desktop.
     </p>
-    <p>2. Отидете на Codespaces :
+    <p>3. Отидете на Codespaces :
       <a href='https://github.com/codespaces' target='_blank' class='lnk'>https://github.com/codespaces</a>
     </p>
     <!--p>3. Изберете Templates ➜ Blank ➜ New</p-->
-    <p>3. Изберете Repository ➜ вашето Repository, от 1а, Дайте Create</p>
-    <p>4. Върнете се в Codespaces /
+    <p>4. Изберете Repository ➜ вашето Repository, от 1а, Дайте Create</p>
+    <p>5. Върнете се в Codespaces /
       <a href='https://github.com/codespaces' target='_blank' class='lnk'>https://github.com/codespaces</a>
     </p>
-    <p>5. Отидете в Owned by - вашето потребителско име - под него е новия шаблон /<b>template</b>/,
+    <p>6. Отидете в Owned by - вашето потребителско име - под него е новия шаблон /<b>template</b>/,
       изберете ... в дясно от него, дайте <b>Rename</b>, и го преименувайте на <b>csharp</b></p>
-    <p>6. Щракнете въху <b>csharp</b> - ляв бутон.</p>
-    <p>7. В ляво изберете квадратчето Extensions, в търсачката Extension Marketplace
+    <p>7. Щракнете въху <b>csharp</b> - ляв бутон.</p>
+    <p>8. В ляво изберете квадратчето Extensions, в търсачката Extension Marketplace
       въведете C#, и изберете <b>C# for Visual Studio Code (powered by OmniSharp)</b>.</p>
-    <p>8. Натиснете бутона <b>[Install]</b></p>
-    <p>9. От менюто <b>&#x2261;</b> горе ляво, изберете <b>Terminal/New terminal</b></p>
+    <p>9. Натиснете бутона <b>[Install]</b></p>
+    <p>10. От менюто <b>&#x2261;</b> горе ляво, изберете <b>Terminal/New terminal</b></p>
     <p><img src='../img/image002.jpg' class='img' alt='Main Menu'></p>
     <p>Забележка: В терминала можете да пишете следните команди /както и много други/:</p>
+
 <pre class='pre'>
 <b>mkdir  hold</b> ➜ създава дирекрория <b>hold</b>; 
 <b>ls -la</b> ➜ показва списък с файловете и директориите в текущата директория
@@ -244,8 +245,8 @@ $ dotnet publish -c Release -r ubuntu-x64
 </pre>
     <p>Изпълнете:</p>
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>mkdir hold</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>ls -la</b>
+@404joe ➜ /workspaces/codespaces-blank $ <b>mkdir hold</b>
+@404joe ➜ /workspaces/codespaces-blank $ <b>ls -la</b>
 </pre>
     <p>Резултат:</p>
 <pre class='pre'>
@@ -253,22 +254,25 @@ total 12
 drwxrwxrwx+ 3 codespace root      4096 May 12 19:13 .
 drwxr-xrwx+ 5 codespace root      4096 May 12 18:59 ..
 drwxrwxrwx+ 2 codespace codespace 4096 May 12 19:13 <b>hold</b>
-@avrgeJoe ➜/workspaces/codespaces-blank $ 
+@404joe ➜/workspaces/codespaces-blank $ 
 </pre>
-    <p>10. Влезте в hold /<b>cd hold</b>/ </p>
+    <p>11. Влезте в hold /<b>cd hold</b>/ </p>
 <pre class='pre'>
-@avrgeJoe ➜/workspaces/codespaces-blank $ <b>cd hold</b>
-@avrgeJoe ➜/workspaces/codespaces-blank/hold $ <b>ls -la</b>
+@404joe ➜/workspaces/codespaces-blank $ <b>cd hold</b>
+@404joe ➜/workspaces/codespaces-blank/hold $ <b>ls -la</b>
 </pre>
     <p>Резултат:</p>
 <pre class='pre'>
 total 8
 drwxrwxrwx+ 2 codespace codespace 4096 May 14 14:58 .
 drwxrwxrwx+ 7 codespace root      4096 May 14 14:58 ..
-@avrgeJoe  ➜/workspaces/codespaces-blank/hold $ 
+@404joe  ➜/workspaces/codespaces-blank/hold $ 
 </pre>
-    <p>11. Във <b>hold</b> изпълнете <b>dotnet new console:</b></p>
-    <p>@avrgeJoe  ➜/workspaces/codespaces-blank/hold $ dotnet new console</p>
+    <p>12. Във <b>hold</b> изпълнете <b>dotnet new console:</b></p>
+<pre class='pre'>
+@404joe  ➜/workspaces/codespaces-blank/hold $ dotnet new console
+</pre>
+
     <p>Резултат:</p>
 <pre class='pre'>
 The template "Console App" was created successfully.
@@ -277,11 +281,15 @@ Restoring /workspaces/codespaces-blank/hold/hold.csproj:
   Determining projects to restore...
   Restored /workspaces/codespaces-blank/hold/hold.csproj (in 117 ms).
 Restore succeeded.
-@avrgeJoe  ➜/workspaces/codespaces-blank/hold $
+@404joe  ➜/workspaces/codespaces-blank/hold $
 </pre>
     <p>Създават се файловете <b>Program.cs</b> - файла с прогртамата, <b>hold.csproj</b>
     - файла на проекта, директория <b>obj</b></p>
-    <p>@avrgeJoe ➜/workspaces/codespaces-blank/hold $ <b>ls -la</b></p>
+
+<pre class='pre'>
+@404joe ➜/workspaces/codespaces-blank/hold $ <b>ls -la</b>
+</pre>
+
     <p>Резултат:</p>
 <pre class='pre'>
 total 20
@@ -290,13 +298,18 @@ drwxrwxrwx+ 7 codespace root      4096 May 14 14:58 ..
 -rw-rw-rw-  1 codespace codespace  105 May 14 15:00 Program.cs
 -rw-rw-rw-  1 codespace codespace  249 May 14 15:00 hold.csproj
 drwxrwxrwx+ 2 codespace codespace 4096 May 14 15:00 obj
-@avrgeJoe  ➜/workspaces/codespaces-blank/hold $ 
+@404joe  ➜/workspaces/codespaces-blank/hold $ 
 </pre>
-    <p><b>12. горе в ляво, се появяват въпросните файлове:</b></p>
+    <p><b>13. горе в ляво, се появяват въпросните файлове:</b></p>
     <p><img src='../img/image003.jpg' class='img' alt='File Tree'></p>
-    <p>13. обратно в терминала компилирате проекта:</p>
-    <p>@avrgeJoe ➜/workspaces/codespaces-blank/hold $ <b>dotnet build</b></p>
+    <p>14. обратно в терминала компилирате проекта:</p>
+
+<pre class='pre'>
+@404joe ➜/workspaces/codespaces-blank/hold $ <b>dotnet build</b>
+</pre>
+
     <p>Резултат:</p>
+
 <pre class='pre'>
 MSBuild version 17.5.1+f6fdcf537 for .NET
   Determining projects to restore...
@@ -306,12 +319,17 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 Time Elapsed 00:00:05.21
-@avrgeJoe ➜/workspaces/codespaces-blank/hold $ 
+@404joe ➜/workspaces/codespaces-blank/hold $ 
 </pre>
-    <p>14. <b>dotnet run</b> за да го стартирате</p>
-    <p>@avrgeJoe ➜/workspaces/codespaces-blank/hold $ <b>dotnet run</b></p>
-    <p><b>Hello, World!<span class='grn'>&lt;- Резултат от изпълнението на програмата</span></b></p>
-    <p>@avrgeJoe ➜ /workspaces/codespaces-blank/hold $ </p>
+    <p>15. <b>dotnet run</b> за да го стартирате</p>
+
+<pre class='pre'>
+@404joe ➜/workspaces/codespaces-blank/hold $ <b>dotnet run</b>
+
+<b>Hello, World!<span class='grn'>&lt;- Резултат от изпълнението на програмата</span></b>
+@404joe ➜ /workspaces/codespaces-blank/hold $ 
+</pre>
+
     <p>15. Може да заместите съдържанието на файла Program.cs със следното:</p>
 
 <pre class='pre'>
@@ -335,15 +353,14 @@ namespace MyApplication
 </pre>        
         
         
-    <p>16. <b>dotnet run </b>➜ в терминала, за да прекомпилирате, и стартирате с една
-      команда.</p>
+    <p>16. <b>dotnet run </b>➜ в терминала, за да прекомпилирате, и стартирате с една команда.</p>
     <p><b>dotnet build</b> - създава hold.dll /dyamic link library/, за да създатете
       .exe /executable/, използвайте: </p>
 <pre class='pre'>
 <b>dotnet publish -c Release -r win-x64</b>
 </pre>
-    <p><b>Резултата е в /workspaces/codespaces-blank/hold/bin/net7.0/win-x64/publish/hold.exe</b></p>
-    <p><b>/в лявата част на екрана/</b></p>
+    <p>Резултата е в <b>/workspaces/codespaces-blank/hold/bin/net7.0/win-x64/publish/hold.exe</b></p>
+    <p>в лявата част на екрана:</p>
     <p><img src='../img/image004.jpg' class='img narrow' alt='Exe Path'></p>
     <p>Този изпълним .exe файл може да бъде изтеглен на локалния ви компютър и изпълнен
       локално /изтеглете чрез десн бутон въху .exe файла ➜ download/.</p>
@@ -357,25 +374,28 @@ namespace MyApplication
       към малка и голяма буква, файла <b><span class='red'>P</span>rogram.cs</b>
       е различен от файла <b><span class='red'>p</span>rogram.cs</b> <b><span class='red'>!!!</span></b></p>
     
-    <p>@avrgeJoe $ <b>grep -rnw <span class='red'>.</span> -e '<span class='blu'>Main</span>'
+    <p>@404joe $ <b>grep -rnw <span class='red'>.</span> -e '<span class='blu'>Main</span>'
       --include \*<span class='grn'>.cs</span>   </b>➜<b> </b> За да търсите реда, съдържащ символния 
       низ <b><span class='blu'>Main</span></b>
       във всички поддиректории на текущата директория ( <span class='red'>.</span>), във всички файлове с
       разширението <b><span class='grn'>.cs</span></b><span class='grn'></span> показва реда
       (<b><span class='lil'>7</span></b>), ако търсеният низ бъде намерен: </p>  
 
-    <p>@avrgeJoe➜/workspaces/codespaces-blank/hold $ <b>grep -rnw . -e 'Main' --include \*.cs</b></p>
+<pre class='pre'>
+@404joe➜/workspaces/codespaces-blank/hold $ <b>grep -rnw . -e 'Main' --include \*.cs</b>
+</pre>
+
 
     
     <p>Резултат:</p>
 <pre class='pre'>
 ./Program.cs:<b><span class='lil'>7</span></b>:        static void Main(string[] args)
-@avrgeJoe➜/workspaces/codespaces-blank/hold $
+@404joe➜/workspaces/codespaces-blank/hold $
 </pre>
 
     <hr>
     
-    <p>17. Примерите към курса може да разгледате на този <a href="https://github.com/avrgeJoe/csharp/tree/master/_examples" target='_blank' class='lnk'>линк</a>. </p>
+    <p>17. Примерите към курса може да разгледате на този <a href="https://github.com/404joe/csharp/tree/master/_examples" target='_blank' class='lnk'>линк</a>. </p>
     
     <hr>
 
@@ -698,17 +718,16 @@ else
       за извършване на сравнение между <b>str1</b> и <b>str2</b> без значение дали
       букви са малки или големи.</p>
     <p><b>Полезни методи </b>на обектът string работа със символни низове:</p>
-    <p><b>StartsWith</b>: Проверява дали низът започва с определен подниз.</p>
-    <p><b>EndsWith</b>: Проверява дали низът завършва с определен подниз.</p>
-    <p><b>Contains</b>: Определя дали в низа присъства подниз.</p>
-    <p><b>IndexOf</b>: Връща индекса на първото срещане на определен подниз.</p>
-    <p><b>LastIndexOf</b>: Връща индекса на последното срещане на определен подниз.</p>
-    <p><b>Substring</b>: Извлича подниз въз основа на посочения начален индекс и дължина
-      по избор.</p>
-    <p><b>Replace</b>: Заменя всички срещания на определен подниз с друг подниз.</p>
-    <p><b>ToUpper</b>: Преобразува низа в главни букви.</p>
-    <p><b>ToLower</b>: Преобразува низа в малки букви.</p>
-    <p><b>Trim</b>: Премахва интервалите от низа.</p>
+    <p>str1.<b>StartsWith</b>: Проверява дали низът започва с определен подниз.</p>
+    <p>str1.<b>EndsWith</b>: Проверява дали низът завършва с определен подниз.</p>
+    <p>str1.<b>Contains</b>: Определя дали в низа присъства подниз.</p>
+    <p>str1.<b>IndexOf</b>: Връща индекса на първото срещане на определен подниз.</p>
+    <p>str1.<b>LastIndexOf</b>: Връща индекса на последното срещане на определен подниз.</p>
+    <p>str1.<b>Substring</b>: Извлича подниз въз основа на посочения начален индекс и дължина по избор.</p>
+    <p>str1.<b>Replace</b>: Заменя всички срещания на определен подниз с друг подниз.</p>
+    <p>str1.<b>ToUpper</b>: Преобразува низа в главни букви.</p>
+    <p>str1.<b>ToLower</b>: Преобразува низа в малки букви.</p>
+    <p>str1.<b>Trim</b>: Премахва интервалите от низа.</p>
     <hr>
     <p><b>Задачи</b></p>
     <p><b><span class='grn'>Задачи символни низове - в следващата тема</span> /<a href='#III' class='lnk'>III. Управляващи инструкции</a>/ </b></p>
@@ -716,13 +735,13 @@ else
     <p>Отворете Codespaces, от миналия път.</p>
     <p>Създайте /<b>mkdir</b>/ директория <b>copy</b>, влезте в нея с <b>cd copy</b>      </p>
 <pre class='pre'>
-git clone https://github.com/avrgeJoe/csharp.git
+git clone https://github.com/404joe/csharp.git
 </pre>
     <p>за да копирате целия проект от примерите на курса</p>
     <p>Алтернативно </p>
 <pre class='pre'>
-curl -O https://raw.githubusercontent.com/avrgeJoe/csharp/master/_examples/L-1-1-holdmybeer/Program.cs
-curl -O https://raw.githubusercontent.com/avrgeJoe/csharp/master/_examples/L-1-1-holdmybeer/holdmybeer.csproj
+curl -O https://raw.githubusercontent.com/404joe/csharp/master/_examples/L-01-1-holdmybeer/Program.cs
+curl -O https://raw.githubusercontent.com/404joe/csharp/master/_examples/L-01-1-holdmybeer/holdmybeer.csproj
 </pre>
     <p>за да копирате само 2-та файла от проекта <b>hello</b></p>
     <p>Изпълнете:</p>
@@ -960,7 +979,7 @@ switch ( day )
     case  5 : System.Console.WriteLine("петък");      break;
     case  6 : System.Console.WriteLine("събота");     break;
     case  7 : System.Console.WriteLine("неделя");     break;
-    default : System.Console.WriteLine(" числото не е в интервала [1, 7 ]");
+    default : System.Console.WriteLine(" числото не е в интервала [1, 7 ]"); break;
 }  
 
 // Резултат: 
@@ -990,7 +1009,7 @@ switch(month)
     case  3 : case  4 : case  5 : Console.WriteLine(" Пролет "); break;    
     case  6 : case  7 : case  8 : Console.WriteLine(" Лято   "); break;
     case  9 : case 10 : case 11 : Console.WriteLine(" Есен   "); break;
-    default : Console.WriteLine&lt;&lt;"Въведения месец не е в интервала [1, 12] ";       
+    default : Console.WriteLine&lt;&lt;"Въведения месец не е в интервала [1, 12] "; break;
 }  
 
 // Резултат: 
@@ -1406,8 +1425,7 @@ Console.WriteLine(result); // Резултат:
       като рекурсивната версия, но без използване на рекурсия.</p>
     <hr>
     <p><b>Задачи</b></p>
-    <p><b>Задачи
-      Логически изрази</b></p>
+    <p><b>Задачи Логически изрази</b></p>
     <p>1. Какъв е резултатът от следната операция : ! (a &amp;&amp; 1) при а = 0 ?</p>
     <p>2. Какъв е резултатът от следната операция : ( ( a &lt;= b ) || ( c &gt; d )
       ) при a = 5, b = 7 , c = 4, d = 3?</p>
@@ -1424,8 +1442,7 @@ Console.WriteLine(result); // Резултат:
       в правоъгълника ABCD с център O ( p, q) и страни a и b.</p>
     <p>7. Да се напише логически израз, който връща true, ако точката А ( x, y, z )
       попада в сфера с център О ( p, q, r) и радиус R.</p>
-    <p><b>Задачи
-      оператори if и switch </b></p>
+    <p><b>Задачи оператори if и switch </b></p>
     <p>1. Да се напише програма, в която от клавиатурата се въвежда цяло число и програмата
       определя дали то е четно или нечетно. Упътване: да се използва оператора %
       за остатък от целочислено делене.</p>
@@ -1484,8 +1501,7 @@ else
     <p><b>11.</b> Напишете програма, която приема низ и отпечатва дължината му.</p>
     <p>string str = "Hold my beer";</p>
     <p>int length = str.Length; // length is 12; str.Count(); ➜ 12</p>
-    <p><b>Задачи
-      оператор for/while/do while</b></p>
+    <p><b>Задачи оператор for/while/do while</b></p>
     <p><b>1. </b>Напишете програма, която приема цяло число N и отпечатва четните числа
       от 0 до N чрез : for / while / do-while. Да се направи да работи обратно, със
       стъпка 0.25 (да се отпечата 25, 24.75, 24.50, … , 1 .25, 1).</p>
@@ -1520,18 +1536,6 @@ for (y = 25; y &gt;= 1; y-- )
 }
 </pre>
 
-    <p><b>Задачи символни низове</b></p>
-    <p>1. Пребройте срещанията на въведен символ въ въведен низ.</p>
-    <p>2. Обърнете низ напишете програма, която приема низ като вход и връща обърнат
-      от зад напред същия низ.</p>
-    <p>3. Въведен низ съдържа няколко кръгли скоби. Да се напише програма, която установява
-      правилно ли са затворени скобите.</p>
-    <p>4<b>.</b> Напишете програма, която приема низ и проверява дали е палиндром /ако
-      се чете от зад напред = ако се чете отпред назад/ 1001; abccba, abc0cba .../</p>
-    <p>5. Да се напише програма, в която се въвежда знаков низ и като резултат програмата
-      отпечатва онези малки латински букви, които не се съдържат в низа.</p>
-    <p>6. Да се напише програма, която в даден низ удвоява всеки символ.</p>
-    
     <hr>
         
     <h2 id='IV'>IV. Масиви</h2>
@@ -1972,6 +1976,40 @@ for (int r = 0; r &lt; jaggedArray.Length; r++)
 </pre>
 
 
+    <p><b>Символни масиви</b></p>
+    <p>В C# можете да третирате низ като масив от знаци и да осъществявате достъп до отделните знаци по 
+      техния индекс, точно както бихте направили с масив. </p>
+      
+<pre class='pre'>
+string s = "Hold my beer";
+int len   = s.Length;
+
+for( int i = 0; i &lt; len; i++ )
+{
+    Console.Write($" s[{i}] => {<span class='grn'>s[i]</span>} ");
+    Console.WriteLine(); // нов ред
+}
+
+// Result:
+// s[0] => H
+// s[1] => o
+// s[2] => l
+// s[3] => d
+// s[4] =>  
+// s[5] => m
+// s[6] => y 
+// s[7] =>  
+// s[8] => b
+// s[9] => e
+// s[10] => e
+// s[11] => r
+</pre>
+  
+    <p>В този пример променливата <b>s</b> съдържа низа <b>"Hold my beer"</b>. Знаците в низа се достъпват с 
+        помощта на индексиране като масив чрез променлива <b>i</b> в квадратни скоби (<span class='grn'>s[i]</span>).
+       Достъпът до първия символ се осъществява чрез индекс 0, а индексът на последния е 11
+    </p>        
+        
     <p><b>Динамични масиви</b></p>
     <p>Ако имате нужда масивът да се разширява динамично, можете да използвате
         <b>List&lt;T&gt;</b> вместо традиционен масив. Класът <b>List&lt;T&gt;</b>
@@ -2152,8 +2190,19 @@ if (str.<b>StartsWith</b>('H'))
 }
 </pre>
         
-    <p>18. Намерете реда с най-много елементи в назъбен масив и отпечатайте
-        индекса на този ред.</p>
+    <p>18. Намерете реда с най-много елементи в назъбен масив и отпечатайте индекса на този ред.</p>
+        
+    <p><b>Задачи символни низове</b></p>
+    <p>1. Пребройте срещанията на въведен символ въ въведен низ.</p>
+    <p>2. Обърнете низ напишете програма, която приема низ като вход и връща обърнат
+      от зад напред същия низ.</p>
+    <p>3. Въведен низ съдържа няколко кръгли скоби. Да се напише програма, която установява
+      правилно ли са затворени скобите.</p>
+    <p>4<b>.</b> Напишете програма, която приема низ и проверява дали е палиндром /ако
+      се чете от зад напред = ако се чете отпред назад/ 1001; abccba, abc0cba .../</p>
+    <p>5. Да се напише програма, в която се въвежда знаков низ и като резултат програмата
+      отпечатва онези малки латински букви, които не се съдържат в низа.</p>
+    <p>6. Да се напише програма, която в даден низ удвоява всеки символ.</p>
     
     <hr>
     
@@ -3236,9 +3285,9 @@ class Program
        със съдържание <b>[]</b>, за да има валиден JSON файл който може да се зареди.</p>
            
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ mkdir jsonfile
-@avrgeJoe ➜ /workspaces/codespaces-blank/jsonfile $ dotnet new console
-@avrgeJoe ➜ /workspaces/codespaces-blank/jsonfile $ echo "[]" > data.json
+@404joe ➜ /workspaces/codespaces-blank $ mkdir jsonfile
+@404joe ➜ /workspaces/codespaces-blank/jsonfile $ dotnet new console
+@404joe ➜ /workspaces/codespaces-blank/jsonfile $ echo "[]" > data.json
 </pre>
     <p>В Program.cs добавте следния код, който добавя по 1 запис към файла data.json при    
        всяко стартиране на програмата:</p>
@@ -3792,7 +3841,7 @@ Console.WriteLine("Read String: " + <b><span class='ora'>rStr</span></b>); // П
        е, че автоматично се включва във вашите проекти, ако са създадени с командата:</p>
 
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank/holdmybeer $ <b>dotnet new webapp</b>
+@404joe ➜ /workspaces/codespaces-blank/holdmybeer $ <b>dotnet new webapp</b>
 </pre>
 
     <p>За да използвате Bootstrap трябва да потърсите тага кoйто искате да стилизирате с CSS, да 
@@ -3849,9 +3898,9 @@ Console.WriteLine("Read String: " + <b><span class='ora'>rStr</span></b>); // П
         да я отпечатаме в конзолата, и да я върнем обратно на броузера. За целта изпълнете командите:</p>
 
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ mkdir post
-@avrgeJoe ➜ /workspaces/codespaces-blank $ cd post
-@avrgeJoe ➜ /workspaces/codespaces-blank/post $ dotnet new webapp
+@404joe ➜ /workspaces/codespaces-blank $ mkdir post
+@404joe ➜ /workspaces/codespaces-blank $ cd post
+@404joe ➜ /workspaces/codespaces-blank/post $ dotnet new webapp
 </pre>
 
 
@@ -3891,11 +3940,11 @@ Console.WriteLine("Read String: " + <b><span class='ora'>rStr</span></b>); // П
         За целта изпълнете следните команди в Терминал: </p>
          
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ mkdir chat
-@avrgeJoe ➜ /workspaces/codespaces-blank $ cd chat
-@avrgeJoe ➜ /workspaces/codespaces-blank/chat $ dotnet new webapp
-@avrgeJoe ➜ /workspaces/codespaces-blank/chat $ cd wwwroot
-@avrgeJoe ➜ /workspaces/codespaces-blank/chat/wwwroot $ curl -O https://raw.githubusercontent.com/avrgeJoe/csharp/master/_examples/L-8-3-chat-signalr/wwwroot/signalr.js
+@404joe ➜ /workspaces/codespaces-blank $ mkdir chat
+@404joe ➜ /workspaces/codespaces-blank $ cd chat
+@404joe ➜ /workspaces/codespaces-blank/chat $ dotnet new webapp
+@404joe ➜ /workspaces/codespaces-blank/chat $ cd wwwroot
+@404joe ➜ /workspaces/codespaces-blank/chat/wwwroot $ curl -O https://raw.githubusercontent.com/404joe/csharp/master/_examples/L-8-3-chat-signalr/wwwroot/signalr.js
 </pre>
 
     <p>Следния HTML създава текстови полета и бутон за изпращане.
@@ -4025,7 +4074,7 @@ app.Run();
     <p> В терминал:</p>       
         
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank/chat $ dotnet run
+@404joe ➜ /workspaces/codespaces-blank/chat $ dotnet run
 </pre>        
 
 <hr>       
@@ -4573,13 +4622,13 @@ ORDER BY Registration.Student
     <p><b>Задачи Бази данни</b></p>
     <p>В Codespaces / Terminal:</p>
     <p>1. Създаване на <b>база данни </b>в директория <b>sql</b>:</p>
-    <p>@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>mkdir sql</b></p>
-    <p> @avrgeJoe ➜ /workspaces/codespaces-blank $ <b>cd sql</b></p>
+    <p>@404joe ➜ /workspaces/codespaces-blank $ <b>mkdir sql</b></p>
+    <p> @404joe ➜ /workspaces/codespaces-blank $ <b>cd sql</b></p>
     <p>Добавяне на <b>.NET</b> поддръжка за <b>SQLite :</b></p>
-    <p>@avrgeJoe ➜ /workspaces/codespaces-blank/sql $ <b>dotnet add package system.data.sqlite</b></p>
+    <p>@404joe ➜ /workspaces/codespaces-blank/sql $ <b>dotnet add package system.data.sqlite</b></p>
     <p><b>Създаване на база данни и отварянето и</b></p>
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank/sql $ <b>sqlite3 </b>'students_db.db'
+@404joe ➜ /workspaces/codespaces-blank/sql $ <b>sqlite3 </b>'students_db.db'
 </pre> 
     <p>Изпълнете следните SQL команди:</p>  
 
@@ -4653,10 +4702,10 @@ ORDER BY Registration.StudentID
     <p><b>NuGet install:</b></p>
         
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>mkdir sql_console  </b>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>cd sql_console </b>            
-@avrgeJoe ➜ /workspaces/codespaces-blank/sql_console $ <b>dotnet new console</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank/sql_console $ <b>dotnet add package system.data.sqlite</b>
+@404joe ➜ /workspaces/codespaces-blank $ <b>mkdir sql_console  </b>
+@404joe ➜ /workspaces/codespaces-blank $ <b>cd sql_console </b>            
+@404joe ➜ /workspaces/codespaces-blank/sql_console $ <b>dotnet new console</b>
+@404joe ➜ /workspaces/codespaces-blank/sql_console $ <b>dotnet add package system.data.sqlite</b>
 </pre>
 
 
@@ -4722,10 +4771,10 @@ using (SQLiteConnection connection = new SQLiteConnection(connectionString))
     сървъра връща файла Privacy.html</p>        
 
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>mkdir sql_webapp</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>cd sql_webapp</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank/sql_webapp $ <b>dotnet new webapp</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank/sql_webapp $ <b>dotnet add package Microsoft.Data.Sqlite</b>
+@404joe ➜ /workspaces/codespaces-blank $ <b>mkdir sql_webapp</b>
+@404joe ➜ /workspaces/codespaces-blank $ <b>cd sql_webapp</b>
+@404joe ➜ /workspaces/codespaces-blank/sql_webapp $ <b>dotnet new webapp</b>
+@404joe ➜ /workspaces/codespaces-blank/sql_webapp $ <b>dotnet add package Microsoft.Data.Sqlite</b>
 </pre>
         
     <p>В <b>/sql_webapp/Pages/index.cshtml.cs</b> променте <b>:</b></p>
@@ -4953,9 +5002,9 @@ public class IndexModel : PageModel
         <p>Първо да създадем ново приложение:</p>
         
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>mkdir ajax</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>cd ajax</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank/ajax $ <b>dotnet new web</b>
+@404joe ➜ /workspaces/codespaces-blank $ <b>mkdir ajax</b>
+@404joe ➜ /workspaces/codespaces-blank $ <b>cd ajax</b>
+@404joe ➜ /workspaces/codespaces-blank/ajax $ <b>dotnet new web</b>
 </pre>
 
 

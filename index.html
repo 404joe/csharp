@@ -125,9 +125,9 @@
       of application. Simply enter the following command to create a console application:</p>
     
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>mkdir holdmybeer</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>cd holdmybeer</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank/holdmybeer $ <b>dotnet new console</b>
+@404Joe ➜ /workspaces/codespaces-blank $ <b>mkdir holdmybeer</b>
+@404Joe ➜ /workspaces/codespaces-blank $ <b>cd holdmybeer</b>
+@404Joe ➜ /workspaces/codespaces-blank/holdmybeer $ <b>dotnet new console</b>
 </pre>
 
     <p>This command creates a new project - the <b>holdmybeer.csproj</b> file in the <b>holdmybeer</b> directory and adds 
@@ -147,11 +147,11 @@
       web applications and services.</p>    
     
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank/holdmybeer $ <b>cd ..</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>mkdir webapp</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>cd webapp</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank/webapp $ <b>dotnet new webapp</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank/webapp $ <b>dotnet run</b>
+@404Joe ➜ /workspaces/codespaces-blank/holdmybeer $ <b>cd ..</b>
+@404Joe ➜ /workspaces/codespaces-blank $ <b>mkdir webapp</b>
+@404Joe ➜ /workspaces/codespaces-blank $ <b>cd webapp</b>
+@404Joe ➜ /workspaces/codespaces-blank/webapp $ <b>dotnet new webapp</b>
+@404Joe ➜ /workspaces/codespaces-blank/webapp $ <b>dotnet run</b>
 
 Result: Now listening on: http://localhost:5234
 </pre>
@@ -161,8 +161,6 @@ Result: Now listening on: http://localhost:5234
       server serves, as shown in the following figure.</p>
     
     <p><img src='img/image001.jpg' class='img' alt='Web App'></p>
-    
-    <p>Figure :NN</p>
     
     <p><b>Self-Contained Deployments</b></p>
     
@@ -186,19 +184,21 @@ $ dotnet publish -c Release -r ubuntu-x64
       that the names of classes, objects, methods, and variables must be different. The following is a list of keywords 
       in C#:</p>
       
-    <p>abstract as base bool break byte case catch char checked class const continue
+    <p><b>abstract as base bool break byte case catch char checked class const continue
       decimal default delegate do double else enum event explicit extern false finally
       fixed float for foreach goto if implicit in int interface internal is lock
       long namespace new null object operator out override params private protected
       public readonly ref return sbyte sealed short sizeof stackalloc static string
       struct switch this throw true try typeof uint ulong unchecked unsafe ushort
-      using virtual void volatile while</p>
+      using virtual void volatile while</b></p>
     <hr>
     
     <p><b>Practice</b></p>
     <p>1. Create an account on GitHub: <a href='https://github.com/signup' target='_blank' class='lnk'>https://github.com/signup</a> </p>
     <p>2. Log in to your account and create a new repository /project source code/
       <a href='https://github.com/new' target='_blank' class='lnk'>https://github.com/new</a>, Name it "csharp" or as desired.
+      Upload an emty file.txt file, created with Notepad on your Desktop.
+      
     </p> <p>3. Go to Codespaces:
       <a href='https://github.com/codespaces' target='_blank' class='lnk'>https://github.com/codespaces</a> </p>
     <p>4. Select Repository ➜ your repository from step 2, and click Create.</p>
@@ -224,8 +224,8 @@ $ dotnet publish -c Release -r ubuntu-x64
     <p>Execute:</p>
     
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>mkdir hold</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>ls -la</b>
+@404Joe ➜ /workspaces/codespaces-blank $ <b>mkdir hold</b>
+@404Joe ➜ /workspaces/codespaces-blank $ <b>ls -la</b>
 </pre>
     
     <p>Result:</p>
@@ -235,22 +235,27 @@ total 12
 drwxrwxrwx+ 3 codespace root      4096 May 12 19:13 .
 drwxr-xrwx+ 5 codespace root      4096 May 12 18:59 ..
 drwxrwxrwx+ 2 codespace codespace 4096 May 12 19:13 <b>hold</b>
-@avrgeJoe ➜/workspaces/codespaces-blank $ 
+@404Joe ➜/workspaces/codespaces-blank $ 
 </pre>
     <p>11. Enter the "hold" directory /<b>cd hold</b>/ </p>
 <pre class='pre'>
-@avrgeJoe ➜/workspaces/codespaces-blank $ <b>cd hold</b>
-@avrgeJoe ➜/workspaces/codespaces-blank/hold $ <b>ls -la</b>
+@404Joe ➜/workspaces/codespaces-blank $ <b>cd hold</b>
+@404Joe ➜/workspaces/codespaces-blank/hold $ <b>ls -la</b>
 </pre>
     <p>Result:</p>
 <pre class='pre'>
 total 8
 drwxrwxrwx+ 2 codespace codespace 4096 May 14 14:58 .
 drwxrwxrwx+ 7 codespace root      4096 May 14 14:58 ..
-@avrgeJoe  ➜/workspaces/codespaces-blank/hold $ 
+@404Joe  ➜/workspaces/codespaces-blank/hold $ 
 </pre>
     <p>12. In the <b>hold</b> directory, execute: <b>dotnet new console:</b></p>
-    <p>@avrgeJoe  ➜/workspaces/codespaces-blank/hold $ dotnet new console</p>
+
+<pre class='pre'>
+@404Joe  ➜/workspaces/codespaces-blank/hold $ dotnet new console
+</pre>
+
+    
     <p>Result:</p>
 <pre class='pre'>
 The template "Console App" was created successfully.
@@ -259,12 +264,14 @@ Restoring /workspaces/codespaces-blank/hold/hold.csproj:
   Determining projects to restore...
   Restored /workspaces/codespaces-blank/hold/hold.csproj (in 117 ms).
 Restore succeeded.
-@avrgeJoe  ➜/workspaces/codespaces-blank/hold $
+@404Joe  ➜/workspaces/codespaces-blank/hold $
 </pre>
 
     <p>Files <b>Program.cs</b> - the program file, <b>hold.csproj</b> - the project file, and the <b>obj</b> directory are created.
-    
-    <p>@avrgeJoe ➜/workspaces/codespaces-blank/hold $ <b>ls -la</b></p>
+
+<pre class='pre'>
+@404Joe ➜/workspaces/codespaces-blank/hold $ <b>ls -la</b>
+</pre>
     
     <p>Result:</p>
     
@@ -275,14 +282,16 @@ drwxrwxrwx+ 7 codespace root      4096 May 14 14:58 ..
 -rw-rw-rw-  1 codespace codespace  105 May 14 15:00 Program.cs
 -rw-rw-rw-  1 codespace codespace  249 May 14 15:00 hold.csproj
 drwxrwxrwx+ 2 codespace codespace 4096 May 14 15:00 obj
-@avrgeJoe  ➜/workspaces/codespaces-blank/hold $ 
+@404Joe  ➜/workspaces/codespaces-blank/hold $ 
 </pre>
 
     <p><b>13. The mentioned files appear in the top left:</b></p>
     <p><img src='img/image003.jpg' class='img' alt='File Tree'></p>
     <p>14. You go back in the terminal to compile the project:</p>
     
-    <p>@avrgeJoe ➜/workspaces/codespaces-blank/hold $ <b>dotnet build</b></p>
+<pre class='pre'>
+@404Joe ➜/workspaces/codespaces-blank/hold $ <b>dotnet build</b>
+</pre>
     
     <p>Result:</p>
     
@@ -295,14 +304,21 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 Time Elapsed 00:00:05.21
-@avrgeJoe ➜/workspaces/codespaces-blank/hold $ 
+@404Joe ➜/workspaces/codespaces-blank/hold $ 
 </pre>
 
     <p>15. <b>dotnet run</b> to run it</p>
-    <p>@avrgeJoe ➜/workspaces/codespaces-blank/hold $ <b>dotnet run</b></p>
-    <p><b>Hello, World!<span class='grn'>&lt;- Result from the program execution</span></b></p>
-    <p>@avrgeJoe ➜ /workspaces/codespaces-blank/hold $ </p>
-    <p>15. You can replace the content of the Program.cs file with the following:</p>
+    
+<pre class='pre'>
+@404Joe ➜/workspaces/codespaces-blank/hold $ <b>dotnet run</b>
+
+<b>Hello, World!<span class='grn'>&lt;- Result from the program execution</span></b>
+@404Joe ➜ /workspaces/codespaces-blank/hold $
+</pre>
+
+    
+    
+    <p>16. You can replace the content of the Program.cs file with the following:</p>
 
 <pre class='pre'>
 using System;
@@ -324,14 +340,14 @@ namespace MyApplication
 // Hold my beer!   
 </pre>        
         
-    <p>16. <b>dotnet run </b>➜ To recompile and run the project with a single command in the terminal, use the following command:</p>
+    <p>17. <b>dotnet run </b>➜ To recompile and run the project with a single command in the terminal, use the following command:</p>
     <p><b>dotnet build</b> - creates hold.dll (dynamic link library). To create an .exe (executable), use: </p>
     
 <pre class='pre'>
 <b>dotnet publish -c Release -r win-x64</b>
 </pre>
-    <p><b>The result is in the directory /workspaces/codespaces-blank/hold/bin/net7.0/win-x64/publish/hold.exe</b></p>
-    <p><b>/On the left side of the screen/</b></p>
+    <p>The result is in the directory <b>/workspaces/codespaces-blank/hold/bin/net7.0/win-x64/publish/hold.exe</b></p>
+    <p>On the left side of the screen:</p>
     <p><img src='img/image004.jpg' class='img narrow' alt='Exe Path'></p>
     <p>The executable .exe file can be downloaded to your local computer and run locally by right-clicking on the 
       .exe file /and selecting ➜ download/.</p>
@@ -347,23 +363,27 @@ namespace MyApplication
       file <b><span class='red'>P</span>rogram.cs</b> is different from the file <b><span class='red'>p</span></b>rogram.cs
       <b><span class='red'>!!!</span></b></p>
       
-    <p>@avrgeJoe $ <b>grep -rnw <span class='red'>.</span> -e '<span class='blu'>Main</span>'
+    <p>@404Joe $ <b>grep -rnw <span class='red'>.</span> -e '<span class='blu'>Main</span>'
       --include \*<span class='grn'>.cs</span>   </b>➜<b> </b>
       To search for the line containing the symbol string <b><span class='blu'>Main</span></b>
       in all subdirectories of the current directory ( <span class='red'>.</span> ), in all the files with 
       the extension <b><span class='grn'>.cs</span></b><span class='grn'></span> displays the line 
       (<b><span class='lil'>7</span></b>), if the searched string is found: </p>
-      
-    <p>@avrgeJoe➜/workspaces/codespaces-blank/hold $ <b>grep -rnw . -e 'Main' --include \*.cs</b></p>
+    
+<pre class='pre'>
+@404Joe➜/workspaces/codespaces-blank/hold $ <b>grep -rnw . -e 'Main' --include \*.cs</b>
+</pre>
+
     <p>Result:</p>
+    
 <pre class='pre'>
 ./Program.cs:<b><span class='lil'>7</span></b>:        static void Main(string[] args)
-@avrgeJoe➜/workspaces/codespaces-blank/hold $
+@404Joe➜/workspaces/codespaces-blank/hold $
 </pre>
         
     <hr>
     
-    <p>17. You can explore the examples for the course at this <a href='https://github.com/avrgeJoe/csharp/tree/master/_examples' target='_blank'  class='lnk'>link</a>.</p>
+    <p>18. You can explore the examples for the course at this <a href='https://github.com/404Joe/csharp/tree/master/_examples' target='_blank'  class='lnk'>link</a>.</p>
     
     <hr>
 
@@ -686,16 +706,16 @@ else
       parameter to compare <b>str1</b> to <b>str2</b> in case-insensitive manner /regardless of the letter case/.</p>
     
     <p><b>Useful methods</b> of the string object for working with character strings:</p>
-    <p><b>StartsWith</b>: Checks if the string starts with a specific substring.</p>
-    <p><b>EndsWith</b>: Checks if the string ends with a specific substring.</p>
-    <p><b>Contains</b>: Determines if the substring is present in the string.</p>
-    <p><b>IndexOf</b>: Returns the index of the first occurrence of a specific substring.</p>
-    <p><b>LastIndexOf</b>: Returns the index of the last occurrence of a specific substring.</p>
-    <p><b>Substring</b>: Extracts a substring based on the specified starting index and optional length.</p>
-    <p><b>Replace</b>: Replaces all occurrences of a specific substring with another substring.</p>
-    <p><b>ToUpper</b>: Converts the string to uppercase.</p>
-    <p><b>ToLower</b>: Converts the string to lowercase.</p>
-    <p><b>Trim</b>: Removes the leading and trailing whitespace from the string.</p>
+    <p>str1.<b>StartsWith</b>: Checks if the string starts with a specific substring.</p>
+    <p>str1.<b>EndsWith</b>: Checks if the string ends with a specific substring.</p>
+    <p>str1.<b>Contains</b>: Determines if the substring is present in the string.</p>
+    <p>str1.<b>IndexOf</b>: Returns the index of the first occurrence of a specific substring.</p>
+    <p>str1.<b>LastIndexOf</b>: Returns the index of the last occurrence of a specific substring.</p>
+    <p>str1.<b>Substring</b>: Extracts a substring based on the specified starting index and optional length.</p>
+    <p>str1.<b>Replace</b>: Replaces all occurrences of a specific substring with another substring.</p>
+    <p>str1.<b>ToUpper</b>: Converts the string to uppercase.</p>
+    <p>str1.<b>ToLower</b>: Converts the string to lowercase.</p>
+    <p>str1.<b>Trim</b>: Removes the leading and trailing whitespace from the string.</p>
     
     <hr>
 
@@ -707,14 +727,14 @@ else
     <p>Create a directory called "copy" using the command <b>mkdir copy</b> and navigate into it with <b>cd copy</b>.</p>
 
 <pre class='pre'>
-git clone https://github.com/avrgeJoe/csharp.git
+git clone https://github.com/404joe/csharp.git
 </pre>
 
     <p>To copy the entire project from the course examples</p>
     <p>Alternatively</p>
 <pre class='pre'>
-curl -O https://raw.githubusercontent.com/avrgeJoe/csharp/master/_examples/L-1-1-holdmybeer/Program.cs
-curl -O https://raw.githubusercontent.com/avrgeJoe/csharp/master/_examples/L-1-1-holdmybeer/holdmybeer.csproj
+curl -O https://raw.githubusercontent.com/404joe/csharp/master/_examples/L-01-1-holdmybeer/Program.cs
+curl -O https://raw.githubusercontent.com/404joe/csharp/master/_examples/L-01-1-holdmybeer/holdmybeer.csproj
 </pre>
     <p>To copy only the 2 files from the <b>hello</b> project </p>
     <p>Execute the following commands</p>
@@ -951,7 +971,7 @@ switch ( day )
     case  5 : System.Console.WriteLine("Friday");    break;
     case  6 : System.Console.WriteLine("Saturday");  break;
     case  7 : System.Console.WriteLine("Sunday");    break;
-    default : System.Console.WriteLine("The number is not in the range [1, 7]");
+    default : System.Console.WriteLine("The number is not in the range [1, 7]"); break;
 }  
 
 // Result: 
@@ -978,7 +998,7 @@ switch(month)
     case  3 : case  4 : case  5 : Console.WriteLine(" Spring "); break;    
     case  6 : case  7 : case  8 : Console.WriteLine(" Summer "); break;
     case  9 : case 10 : case 11 : Console.WriteLine(" Autumn "); break;
-    default : Console.WriteLine&lt;&lt;"The entered month is not within the range [1, 12] ";       
+    default : Console.WriteLine&lt;&lt;"The entered month is not within the range [1, 12] "; break;
 }  
 
 // Result: 
@@ -1475,18 +1495,6 @@ for (y = 25; y &gt;= 1; y-- )
 }
 </pre>
 
-    <p><b>Strings Problems</b></p>
-    <p>1. Count the occurrences of a given character in a given string.</p>
-    <p>2. Reverse a string - write a program that takes a string as input and returns the string reversed.</p>
-    <p>3. A given string contains several parentheses. Write a program that checks if the parentheses are properly closed.</p>
-    <p>4<b>.</b> Write a program that takes a string and checks if it is a palindrome (reads the same forwards and 
-      backwards) - e.g., 1001; abccba, abc0cba .../</p>
-    <p>5. Write a program where a character string is entered, and as a result, the program prints the lowercase Latin 
-      letters that are not contained in the string.</p>
-    <p>6. Write a program that doubles each character in a given string.</p>
-    
-    <hr>
-    
     <h2 id='IV'>IV. Arrays</h2>
     <p><b>One-Dimensional Arrays</b></p>
     <p>In C#, a one-dimensional array is a collection of elements of the same data type that are stored in a contiguous 
@@ -1902,6 +1910,42 @@ for (int r = 0; r &lt; jaggedArray.Length; r++)
 // jagged[2][0] = 17        jagged[2][1] = 18       jagged[2][2] = 19
 </pre>
 
+    <p><b>Symbolic Arrays</b></p>
+    <p>In C#, you can treat a string as an array of characters and access individual characters by their index, 
+       just like you would with an array. </p>
+    
+<pre class='pre'>
+string s = "Hold my beer";
+int len   = s.Length;
+
+for( int i = 0; i &lt; len; i++ )
+{
+    Console.Write($" s[{i}] => {<span class='grn'>s[i]</span>} ");
+    Console.WriteLine(); // new line
+}
+
+// Result:
+// s[0] => H
+// s[1] => o
+// s[2] => l
+// s[3] => d
+// s[4] =>  
+// s[5] => m
+// s[6] => y 
+// s[7] =>  
+// s[8] => b
+// s[9] => e
+// s[10] => e
+// s[11] => r
+</pre>
+
+    <p>In this example, the <b>s</b> variable holds the string <b>"Hold my beer"</b>. The characters within the string are 
+      accessed using array-like indexing with the variable <b>i</b> in square brackets (<span class='grn'>s[i]</span>). 
+      The first character is accessed using index 0, and the last one's index is 11
+    </p>  
+
+
+
 
     <p><b>Dynamic Arrays</b></p>
     <p>If you need the array to dynamically expand, you can use <b>List&lt;T&gt;</b> instead of a traditional array. 
@@ -2031,6 +2075,9 @@ class Program
     <p>16. Sort the elements in each row of the jagged array in ascending order.</p>
     <p>17. Create a jagged array of strings. Print all strings in the array that start with the letter 'A'.
     <p><b>Hint</b>: Use the <b>StartsWith</b> method on the <b>string</b> object:</p>
+    
+    <hr>
+
 
 <pre class='pre'>
 string str = "Hold my beer";
@@ -2042,6 +2089,16 @@ if (str.<b>StartsWith</b>('H'))
 </pre>    
     
     <p>18. Find the row with the most elements in the jagged array and print its index.</p>
+
+    <p><b>Strings Problems</b></p>
+    <p>1. Count the occurrences of a given character in a given string.</p>
+    <p>2. Reverse a string - write a program that takes a string as input and returns the string reversed.</p>
+    <p>3. A given string contains several parentheses. Write a program that checks if the parentheses are properly closed.</p>
+    <p>4<b>.</b> Write a program that takes a string and checks if it is a palindrome (reads the same forwards and 
+      backwards) - e.g., 1001; abccba, abc0cba .../</p>
+    <p>5. Write a program where a character string is entered, and as a result, the program prints the lowercase Latin 
+      letters that are not contained in the string.</p>
+    <p>6. Write a program that doubles each character in a given string.</p>
 
     <hr>  
         
@@ -2923,9 +2980,9 @@ class Program
       that can be loaded.</p>
 
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ mkdir jsonfile
-@avrgeJoe ➜ /workspaces/codespaces-blank/jsonfile $ dotnet new console
-@avrgeJoe ➜ /workspaces/codespaces-blank/jsonfile $ echo "[]" > data.json
+@404joe ➜ /workspaces/codespaces-blank $ mkdir jsonfile
+@404joe ➜ /workspaces/codespaces-blank/jsonfile $ dotnet new console
+@404joe ➜ /workspaces/codespaces-blank/jsonfile $ echo "[]" > data.json
 </pre>
 
     <p>In Program.cs, add the following code that adds one entry to the data.json file each time the program is run:</p>
@@ -3333,7 +3390,7 @@ Console.WriteLine("Read String: " + <b><span class='ora'>rStr</span></b>); // Di
       into your projects if they are created with the following command:</p>
 
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank/holdmybeer $ <b>dotnet new webapp</b>
+@404joe ➜ /workspaces/codespaces-blank/holdmybeer $ <b>dotnet new webapp</b>
 </pre>
 
     <p>In order to use Bootstrap, you need to search for the tag you want to style with CSS and add the corresponding CSS class to it. 
@@ -3375,9 +3432,9 @@ Console.WriteLine("Read String: " + <b><span class='ora'>rStr</span></b>); // Di
       printing it in the console, and returning it back to the browser. To achieve this, execute the following commands:</p>
 
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ mkdir post
-@avrgeJoe ➜ /workspaces/codespaces-blank $ cd post
-@avrgeJoe ➜ /workspaces/codespaces-blank/post $ dotnet new webapp
+@404joe ➜ /workspaces/codespaces-blank $ mkdir post
+@404joe ➜ /workspaces/codespaces-blank $ cd post
+@404joe ➜ /workspaces/codespaces-blank/post $ dotnet new webapp
 </pre>
 
 <p>In index.cshtml, create a POST form that makes a POST request to the backend.</p>
@@ -3417,11 +3474,11 @@ Console.WriteLine("Read String: " + <b><span class='ora'>rStr</span></b>); // Di
       the following commands in the Terminal:</p>
 
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ mkdir chat
-@avrgeJoe ➜ /workspaces/codespaces-blank $ cd chat
-@avrgeJoe ➜ /workspaces/codespaces-blank/chat $ dotnet new webapp
-@avrgeJoe ➜ /workspaces/codespaces-blank/chat $ cd wwwroot
-@avrgeJoe ➜ /workspaces/codespaces-blank/chat/wwwroot $ curl -O https://raw.githubusercontent.com/avrgeJoe/csharp/master/_examples/L-8-3-chat-signalr/wwwroot/signalr.js
+@404joe ➜ /workspaces/codespaces-blank $ mkdir chat
+@404joe ➜ /workspaces/codespaces-blank $ cd chat
+@404joe ➜ /workspaces/codespaces-blank/chat $ dotnet new webapp
+@404joe ➜ /workspaces/codespaces-blank/chat $ cd wwwroot
+@404joe ➜ /workspaces/codespaces-blank/chat/wwwroot $ curl -O https://raw.githubusercontent.com/404joe/csharp/master/_examples/L-8-3-chat-signalr/wwwroot/signalr.js
 </pre>
 
 
@@ -3554,7 +3611,7 @@ app.Run();
     <p>In the terminal:</p>
 
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank/chat $ dotnet run
+@404joe ➜ /workspaces/codespaces-blank/chat $ dotnet run
 </pre>        
 
 <hr>       
@@ -4006,14 +4063,14 @@ ORDER BY Registration.Student
     <p><b>Practice Databases</b></p>
     <p>In Codespaces / Terminal:</p>
     <p>1. Creating a database in the 'sql' directory:</p>
-    <p>@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>mkdir sql</b></p>
-    <p>@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>cd sql</b></p>
+    <p>@404joe ➜ /workspaces/codespaces-blank $ <b>mkdir sql</b></p>
+    <p>@404joe ➜ /workspaces/codespaces-blank $ <b>cd sql</b></p>
     <p>Adding .NET support for SQLite:</p>
-    <p>@avrgeJoe ➜ /workspaces/codespaces-blank/sql $ <b>dotnet add package system.data.sqlite</b></p>
+    <p>@404joe ➜ /workspaces/codespaces-blank/sql $ <b>dotnet add package system.data.sqlite</b></p>
     
     <p><b>Creating and opening a database</b></p>
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank/sql $ <b>sqlite3 </b>'students_db.db'
+@404joe ➜ /workspaces/codespaces-blank/sql $ <b>sqlite3 </b>'students_db.db'
 </pre> 
     
     <p>Execute the following SQL commands:</p>
@@ -4088,10 +4145,10 @@ ORDER BY Registration.StudentID
     <p><b>NuGet install:</b></p>
         
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>mkdir sql_console  </b>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>cd sql_console </b>            
-@avrgeJoe ➜ /workspaces/codespaces-blank/sql_console $ <b>dotnet new console</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank/sql_console $ <b>dotnet add package system.data.sqlite</b>
+@404joe ➜ /workspaces/codespaces-blank $ <b>mkdir sql_console  </b>
+@404joe ➜ /workspaces/codespaces-blank $ <b>cd sql_console </b>            
+@404joe ➜ /workspaces/codespaces-blank/sql_console $ <b>dotnet new console</b>
+@404joe ➜ /workspaces/codespaces-blank/sql_console $ <b>dotnet add package system.data.sqlite</b>
 </pre>
 
 
@@ -4154,10 +4211,10 @@ using (SQLiteConnection connection = new SQLiteConnection(connectionString))
       the file Privacy.html.</p>
 
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>mkdir sql_webapp</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>cd sql_webapp</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank/sql_webapp $ <b>dotnet new webapp</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank/sql_webapp $ <b>dotnet add package Microsoft.Data.Sqlite</b>
+@404joe ➜ /workspaces/codespaces-blank $ <b>mkdir sql_webapp</b>
+@404joe ➜ /workspaces/codespaces-blank $ <b>cd sql_webapp</b>
+@404joe ➜ /workspaces/codespaces-blank/sql_webapp $ <b>dotnet new webapp</b>
+@404joe ➜ /workspaces/codespaces-blank/sql_webapp $ <b>dotnet add package Microsoft.Data.Sqlite</b>
 </pre>
         
     <p>In <b>/sql_webapp/Pages/index.cshtml.cs</b>, make the following change <b>:</b></p>
@@ -4370,9 +4427,9 @@ public class IndexModel : PageModel
     <p>First, create a new application:</p>
         
 <pre class='pre'>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>mkdir ajax</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank $ <b>cd ajax</b>
-@avrgeJoe ➜ /workspaces/codespaces-blank/ajax $ <b>dotnet new web</b>
+@404joe ➜ /workspaces/codespaces-blank $ <b>mkdir ajax</b>
+@404joe ➜ /workspaces/codespaces-blank $ <b>cd ajax</b>
+@404joe ➜ /workspaces/codespaces-blank/ajax $ <b>dotnet new web</b>
 </pre>
 
     <p>In Program.cs, add mappings for JSON endpoints /static file https://somehost.com/index.html and API endpoint 
