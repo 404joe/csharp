@@ -330,7 +330,7 @@ Time Elapsed 00:00:05.21
 @404joe ➜ /workspaces/codespaces-blank/hold $ 
 </pre>
 
-    <p>15. Може да заместите съдържанието на файла Program.cs със следното:</p>
+    <p>16. Може да заместите съдържанието на файла Program.cs със следното:</p>
 
 <pre class='pre'>
 using System;
@@ -353,9 +353,8 @@ namespace MyApplication
 </pre>        
         
         
-    <p>16. <b>dotnet run </b>➜ в терминала, за да прекомпилирате, и стартирате с една команда.</p>
-    <p><b>dotnet build</b> - създава hold.dll /dyamic link library/, за да създатете
-      .exe /executable/, използвайте: </p>
+    <p>17. <b>dotnet run </b>➜ в терминала, за да прекомпилирате, и стартирате с една команда.</p>
+    <p><b>dotnet build</b> - създава hold.dll /dyamic link library/, за да създатете .exe /executable/, използвайте: </p>
 <pre class='pre'>
 <b>dotnet publish -c Release -r win-x64</b>
 </pre>
@@ -363,13 +362,20 @@ namespace MyApplication
     <p>в лявата част на екрана:</p>
     <p><img src='../img/image004.jpg' class='img narrow' alt='Exe Path'></p>
     <p>Този изпълним .exe файл може да бъде изтеглен на локалния ви компютър и изпълнен
-      локално /изтеглете чрез десн бутон въху .exe файла ➜ download/.</p>
+      локално /изтеглете чрез десн бутон въху директорията <b>win10-x64</b> на hold.exe файла ➜ download/.</p>
     <p><b>Други полезни команди:</b></p>
 <pre class='pre'>
-<b>pwd</b> - показва пътя до текущата директория
+<b>pwd</b> ➜ показва пътя до текущата директория
 <b>cat Program.cs</b> ➜ Отпечатва съдържанието на <b>Program.cs</b> в терминала;
 <b>cat Pro[+tab&#x21C6;] ➜ cat Program.cs</b> ➜ автоматично довършва името на файла който започва с <b>Pro</b>
+<b>[ctrl] + l</b> ➜ за да се почисти терминала
+<b>[ctrl] + c</b> ➜ за да се прекъсне процес
+<b>↑</b> или <b>↓</b> ➜ предишни команди
+<b>[ctrl]</b> + <b>[space]</b> ➜ Автоматично довършване на командата в Редактора /Погледнете следващото изображение/
 </pre>
+
+    <p><img src='../img/image018.jpg' class='img' alt='Autocomplete Intellisense'></p>
+
     <p><b><span class='red'>!!!</span></b> Имената на файловете и директориите са чуствителни
       към малка и голяма буква, файла <b><span class='red'>P</span>rogram.cs</b>
       е различен от файла <b><span class='red'>p</span>rogram.cs</b> <b><span class='red'>!!!</span></b></p>
@@ -377,7 +383,7 @@ namespace MyApplication
     <p>@404joe $ <b>grep -rnw <span class='red'>.</span> -e '<span class='blu'>Main</span>'
       --include \*<span class='grn'>.cs</span>   </b>➜<b> </b> За да търсите реда, съдържащ символния 
       низ <b><span class='blu'>Main</span></b>
-      във всички поддиректории на текущата директория ( <span class='red'>.</span>), във всички файлове с
+      във всички поддиректории на текущата директория ( <span class='red'>.</span> ), във всички файлове с
       разширението <b><span class='grn'>.cs</span></b><span class='grn'></span> показва реда
       (<b><span class='lil'>7</span></b>), ако търсеният низ бъде намерен: </p>  
 
@@ -395,7 +401,7 @@ namespace MyApplication
 
     <hr>
     
-    <p>17. Примерите към курса може да разгледате на този <a href="https://github.com/404joe/csharp/tree/master/_examples" target='_blank' class='lnk'>линк</a>. </p>
+    <p>18. Примерите към курса може да разгледате на този <a href="https://github.com/404joe/csharp/tree/master/_examples" target='_blank' class='lnk'>линк</a>. </p>
     
     <hr>
 
@@ -624,7 +630,7 @@ class Program
       се появят <b>null</b> стойности. Като цяло е по-добре да се осигури правилна
       проверка и обработка на <b>null</b>, за да се избегнат потенциални изключения
       по време на изпълнение.</p>
-    <p><b>Присвояване (<span class='red'>!!!</span></b><span class='red'> = ➜ чете се <b>присвоява !!!</b></span><b>)</b></p>
+    <p><b>Присвояване</b> (<span class='red'><b>!!!</b></span><span class='red'> = ➜ чете се <b>присвоява !!!</b></span><b>)</b></p>
     <p>При декларация на променлива може да й се зададе начална стойност:</p>
 <pre class='pre'>
 int a <b><span class='red'>=</span></b> 10;  // <b><span class='red'>=</span></b> ➜ <b>оператор <span class='red'>присвоява; чете се 'а присвоява десет'</span></b>
