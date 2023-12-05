@@ -25,7 +25,7 @@ To get started with the course, follow these steps:
 - [VI. OOP - Advanced Topics](https://404joe.github.io/csharp/#VI)
 - [VII. Events, Exceptions, Files](https://404joe.github.io/csharp/#VII)
 - [VIII. Web Applications: Razor × Blazor × SignalR](https://404joe.github.io/csharp/#VIII)
-- [IX. Databases and SQL](https://404joe.github.io/csharp/#IX)
+- [IX. Databases × SQL](https://404joe.github.io/csharp/#IX)
 - [X. C# WebApp × SQL Databases](https://404joe.github.io/csharp/#X)
 
 Each topic is accompanied by practical examples and exercises to reinforce your knowledge. By the end of this course, you will have a solid understanding of the fundamentals of C# and be ready to tackle more advanced topics.

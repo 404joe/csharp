@@ -23,7 +23,7 @@
 - [VI. ООП - Тънкости](https://404joe.github.io/csharp/bg/#VI)
 - [VII. Събития, Изключения, Файлове](https://404joe.github.io/csharp/bg/#VII)
 - [VIII. Приложения за WEB: Razor × Blazor × SignalR](https://404joe.github.io/csharp/bg/#VIII)
-- [IX. Бази Данни и SQL](https://404joe.github.io/csharp/bg/#IX)
+- [IX. Бази Данни × SQL](https://404joe.github.io/csharp/bg/#IX)
 - [X. C# WebApp × SQL Бази Данни](https://404joe.github.io/csharp/bg/#X)
 
 Всяка тема е придружена от практически примери и упражнения за затвърждаване на вашето знание. До края на този курс ще имате солидно разбиране за основите на C# и ще сте готови да се справите с тънкости за по-напреднали.
