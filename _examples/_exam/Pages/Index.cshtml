@@ -9,24 +9,25 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
-<div class="text-center">
-    <form method="post">
-        <input type="text" name="Name" />
-        <input type="number" name="Age" />
-        <input type="submit" value="Submit" />
-    </form>
-</div>
- 
-<div>
-    <table>
-        <tbody>   
-            @foreach (var row in Model.persons)
-            {
-                <tr>
-                    <td>@row.pName</td>
-                    <td>@row.pAge</td>
-                </tr>
+<table>
+    <thead>   <!-- thead tag - table header -->
+        <tr>  <!-- tr tag - table row-->
+            @foreach (var column in Model.Cols)
+            { 
+                <!-- Generating th tags - table headers -->
+                <th>@column</th>
             }
-        </tbody>
-    </table>
-</div>
+        </tr>
+    </thead>
+    <tbody>   <!-- tbody tag - table body -->
+        @foreach (var row in Model.Rows)
+        {
+            <tr>
+                @foreach (var value in row)
+                {
+                    <td>@value</td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>

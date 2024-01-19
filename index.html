@@ -4298,16 +4298,16 @@ public class IndexModel : PageModel
 <pre class='pre'>
 &lt;!-- ADD FOLLOWING LINES FOR SQLITE × RAZOR PAGES table tag DEMO --&gt;
 &lt;table&gt;
-    &lt;thead&gt;   // thead tag - table header/
-        &lt;tr&gt;  // tr tag - table row
+    &lt;thead&gt;   &lt;!-- thead tag - table header --&gt;
+        &lt;tr&gt;  &lt;!-- tr tag - table row       --&gt;
             <span class='grn'>@foreach (</span><span class='yel'>var column</span><span class='grn'> in <b>Model.Cols</b>)</span>
             { 
-                // Generating th tags - table headers
+                &lt;!-- Generating th tags - table headers --&gt;
                 &lt;th&gt;<span class='yel'>@column</span>&lt;/th&gt;
             }
         &lt;/tr&gt;
     &lt;/thead&gt;
-    &lt;tbody&gt;   // tbody tag - table body
+    &lt;tbody&gt;   &lt;!-- tbody tag - table body --&gt;
         <span class='grn'>@foreach (</span><span class='yel'>var row</span> <span class='grn'>in <b>Model.Rows</b>)</span>
         {
             &lt;tr&gt;
