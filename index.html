@@ -358,7 +358,7 @@ namespace MyApplication
 <b>cat Program.cs</b> ➜ prints /displays/ the contents of <b>Program.cs</b> in the terminal;
 <b>cat Pro[+tab&#x21C6;] ➜ cat Program.cs</b> ➜  automatically completes the name of the file starting with <b>Pro</b>
 <b>[ctrl] + l</b> ➜ to clear the console
-<b>[ctrl] + c</b> ➜ to terminate a process
+<b>[ctrl] + c</b> ➜ to terminate a process, e.g. a project created with <b>dotnet new webapp</b>
 <b>↑</b> or <b>↓</b> ➜ previous commands
 <b>[ctrl]</b> + <b>[space]</b> ➜ Autocomplete in source code Editor /Look the image below/
 </pre>
@@ -3392,9 +3392,12 @@ Console.WriteLine("Read String: " + <b><span class='ora'>rStr</span></b>); // Di
       can define different styles for different screen sizes of various devices, such as tablets, phones, and computers. This ensures that 
       your web page adapts and looks good on different devices, including desktops, tablets, and mobile phones.</p>
 
-    <p><b>Positioning</b>: CSS offers various techniques for styling and positioning different elements of a web page. By using properties 
-      like <b>display</b>, <b>float</b>, <b>position</b>, and CSS Grid or Flexbox, you can create complex layouts, align elements, and control 
-      their positioning within the page.</p>
+    <p><b>Positioning</b>: CSS offers various techniques for styling and positioning different elements of a web page. 
+      By using properties like <b>display</b>, <b>float</b>, <b>position</b>, and <b>CSS</b> 
+      <a href='https://grid.malven.co/' target='_blank' class='lnk'>Grid</a> or 
+      <a href='https://css-tricks.com/snippets/css/a-guide-to-flexbox/' target='_blank' class='lnk'>Flexbox</a>, you can create 
+      complex layouts, by applying them on different elements, like <b>DIV</b> or <b>SPAN</b>,
+      align elements, and control their positioning within the page. </p>
 
     <p><b>Bootstrap</b></p>
 
@@ -3418,6 +3421,22 @@ Console.WriteLine("Read String: " + <b><span class='ora'>rStr</span></b>); // Di
   &lt;/tbody&gt;
 &lt;/table&gt;
 </pre>
+
+    <p>With the command <b>dotnet new page -n Info</b> executed in the directory <b>Pages</b> you add a new page 
+      <b>Info</b> to the <b>Web</b> application</p>
+
+<pre class='pre'>
+@404joe ➜ /workspaces/codespaces-blank/holdmybeer $ <b>cd Pages</b>
+@404joe ➜ /workspaces/codespaces-blank/holdmybeer/Pages $ <b>dotnet new page -n Info</b>
+The template "Razor Page" was created successfully.
+@404joe ➜ /workspaces/codespaces-blank/holdmybeer/Pages $  <b>ls -la Info*.*</b>
+-rw-rw-rw- 1 codespace codespace  51 Jan 23 00:46 Info.cshtml
+-rw-rw-rw- 1 codespace codespace 217 Jan 23 00:46 Info.cshtml.cs
+@404joe ➜ /workspaces/codespaces-blank/holdmybeer/Pages $ <b>cd ..</b>
+@404joe ➜ /workspaces/codespaces-blank/holdmybeer
+</pre>     
+    
+
            
     <p><b>Bootstrap</b> is a popular CSS library that provides a collection of pre-designed <b>CSS</b> and <b>JavaScript</b> components, 
       along with a responsive system for arranging elements. Some advantages of using Bootstrap include:</p>

@@ -369,7 +369,7 @@ namespace MyApplication
 <b>cat Program.cs</b> ➜ Отпечатва съдържанието на <b>Program.cs</b> в терминала;
 <b>cat Pro[+tab&#x21C6;] ➜ cat Program.cs</b> ➜ автоматично довършва името на файла който започва с <b>Pro</b>
 <b>[ctrl] + l</b> ➜ за да се почисти терминала
-<b>[ctrl] + c</b> ➜ за да се прекъсне процес
+<b>[ctrl] + c</b> ➜ за да се прекъсне процес, например проект създаден с <b>dotnet new webapp</b>
 <b>↑</b> или <b>↓</b> ➜ предишни команди
 <b>[ctrl]</b> + <b>[space]</b> ➜ Автоматично довършване на командата в Редактора /Погледнете следващото изображение/
 </pre>
@@ -3840,10 +3840,11 @@ Console.WriteLine("Read String: " + <b><span class='ora'>rStr</span></b>); // П
         компютри, таблети и мобилни телефони.</p>
     <p><b>Позициониране</b>: CSS предлага различни техники за оформление
         и позициониране на различните елементи на уеб страницата. Използвайки
-        свойства като <b>display</b>, <b>float</b>, <b>position</b>
-        и <b>CSS Grid</b> или <b>Flexbox</b>, можете да създавате сложни
-        оформления, да подравнявате елементи и да контролирате тяхното
-        позициониране в рамките на страницата.</p>
+        свойства като <b>display</b>, <b>float</b>, <b>position</b> и <b>CSS</b> 
+        <a href='https://grid.malven.co/' target='_blank' class='lnk'>Grid</a>
+        или <a href='https://css-tricks.com/snippets/css/a-guide-to-flexbox/' target='_blank' class='lnk'>Flexbox</a>, 
+        можете да създавате сложни оформления, прилагайки ги върху различни елементи, като <b>DIV</b> или <b>SPAN</b>, 
+        да подравнявате елементи и да контролирате тяхното позициониране в рамките на страницата.</p>
     <p><b>Bootstrap</b></p>
     <p>Най-голямото предимство на <a href='https://getbootstrap.com/' target='_blank' class='lnk'>Bootstrap</a>  
        е, че автоматично се включва във вашите проекти, ако са създадени с командата:</p>
@@ -3865,6 +3866,22 @@ Console.WriteLine("Read String: " + <b><span class='ora'>rStr</span></b>); // П
   &lt;/tbody&gt;
 &lt;/table&gt;
 </pre>
+
+
+    <p>С командата <b>dotnet new page -n Info</b> изпълнена в директория <b>Pages</b> добавяте нова страница 
+      с име <b>Info</b> към <b>Web</b> приложението</p>
+
+<pre class='pre'>
+@404joe ➜ /workspaces/codespaces-blank/holdmybeer $ <b>cd Pages</b>
+@404joe ➜ /workspaces/codespaces-blank/holdmybeer/Pages $ <b>dotnet new page -n Info</b>
+The template "Razor Page" was created successfully.
+@404joe ➜ /workspaces/codespaces-blank/holdmybeer/Pages $  <b>ls -la Info*.*</b>
+-rw-rw-rw- 1 codespace codespace  51 Jan 23 00:46 Info.cshtml
+-rw-rw-rw- 1 codespace codespace 217 Jan 23 00:46 Info.cshtml.cs
+@404joe ➜ /workspaces/codespaces-blank/holdmybeer/Pages $ <b>cd ..</b>
+@404joe ➜ /workspaces/codespaces-blank/holdmybeer
+</pre>   
+
            
     <p><b>Bootstrap</b> е популярна CSS библиотека, която предоставя колекция
         от предварително проектирани <b>CSS</b> и <b>JavaScript</b>
