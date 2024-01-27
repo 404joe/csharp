@@ -14,15 +14,13 @@ namespace MyApp.Namespace
         public void OnPost()
         {
             string connectionString = "Data Source=students.db";
-            using (var connection = new SqliteConnection(connectionString))
-            {
-                connection.Open();
-                string sql = $"INSERT INTO MARKS (NAME, NUMBER, MARK) VALUES ( '{Name}', '{Number}', '{Mark}' ); ";
-                using (var command = new SqliteCommand(sql, connection))
-                {
-                    command.ExecuteNonQuery();
-                }
-            }
+            var connection = new SqliteConnection(connectionString);
+            
+            connection.Open();
+            string sql = $"INSERT INTO MARKS (NAME, NUMBER, MARK) VALUES ( '{Name}', '{Number}', '{Mark}' ); ";
+            var command = new SqliteCommand(sql, connection);
+                
+            command.ExecuteNonQuery();
         }
     }
 }

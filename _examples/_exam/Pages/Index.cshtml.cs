@@ -18,30 +18,29 @@ public class IndexModel : PageModel
             connection.Open();
             string sql =" SELECT NAME, NUMBER, MARK FROM MARKS; ";
                    
-            using (var command = new SqliteCommand(sql, connection))
+            var command = new SqliteCommand(sql, connection);
+            
+            var reader = command.ExecuteReader();
+                
+            Cols = new List<string>();
+            Rows    = new List<List<string>>();
+                    
+            // column names
+            for (int i = 0; i < reader.FieldCount; i++)
             {
-                using (var reader = command.ExecuteReader())
-                {
-                    Cols = new List<string>();
-                    Rows    = new List<List<string>>();
+                Cols.Add(reader.GetName(i));
+            }
                     
-                    // column names
-                    for (int i = 0; i < reader.FieldCount; i++)
-                    {
-                        Cols.Add(reader.GetName(i));
-                    }
-                    
-                    // rows
-                    while (reader.Read())
-                    {
-                        var row = new List<string>();
-                        for (int i = 0; i < reader.FieldCount; i++)
-                        {   
-                            row.Add(reader[i].ToString() ! ); 
-                        }
-                        Rows.Add(row);
-                    }
+            // rows
+            while (reader.Read())
+            {
+                var row = new List<string>();
+                for (int i = 0; i < reader.FieldCount; i++)
+                {   
+                    row.Add(reader[i].ToString() ! ); 
                 }
+                Rows.Add(row);
+                
             }
         }        
     }      
