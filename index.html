@@ -2301,7 +2301,7 @@ namespace HoldMyBeer  // namespace is used to group classes that perform
 {
     class MyClass // class MyClass
     {
-        public void &lt;b&gt;MyMethod&lt;/b&gt;() // Method - a user-defined function, non-static
+        public void <b>MyMethod</b>() // Method - a user-defined function, non-static
         {
             Console.WriteLine(" ------ MyMethod called ! ------ ");
         }
@@ -2309,11 +2309,11 @@ namespace HoldMyBeer  // namespace is used to group classes that perform
         
     class Program 
     {    
-        static void &lt;b&gt;Main&lt;/b&gt;(string[] args)
+        static void <b>Main</b>(string[] args)
         {
-            &lt;b&gt;MyClass p = new MyClass(); // &lt;span class='red'&gt;new&lt;/span&gt; - creating an object &lt;b&gt;p&lt;/b&gt; of the class 
-                                       // &lt;b&gt;MyClass&lt;/b&gt; in the variable &lt;b&gt;p&lt;/b&gt;
-            &lt;b&gt;p&lt;/b&gt;.MyMethod(); // Calling MyMethod
+            <b>MyClass p = new MyClass(); // <span class='red'>new</span> - creating an object <b>p</b> of the class 
+                                       // <b>MyClass</b> in the variable <b>p</b>
+            <b>p</b>.MyMethod(); // Calling MyMethod
 
             // after working with the object, it is not necessary to release it;    
             // this is taken care of by the so-called Garbage Collector
