@@ -922,7 +922,7 @@ else if (<span class='blu'>a == 0</span> )
 else 
 <b><span class='red'>{</span> 
     // <span class='red'>{</span></b>блок else на if<b><span class='red'>}</span></b>
-    // изпълнява се, защото а == -120; и нито <span class='grn'>а &gt; 0</span> е изпълнено; нито <span class='grn'>а == 0</span> е изпълнено
+    // изпълнява се, защото а == -120; и нито <span class='grn'>а &gt; 0</span> е изпълнено; нито <span class='blu'>а == 0</span> е изпълнено
     // следователно не е необходима и проверка за а &lt; 0, защото, ако не е нула и не 
     // е положително, остава да бъде отрицателно 
     Console.WriteLine("а е отрицателно число");
@@ -1012,7 +1012,7 @@ switch(month)
     case  3 : case  4 : case  5 : Console.WriteLine(" Пролет "); break;    
     case  6 : case  7 : case  8 : Console.WriteLine(" Лято   "); break;
     case  9 : case 10 : case 11 : Console.WriteLine(" Есен   "); break;
-    default : Console.WriteLine&lt;&lt;"Въведения месец не е в интервала [1, 12] "; break;
+    default : Console.WriteLine("Въведения месец не е в интервала [1, 12] "); break;
 }  
 
 // Резултат: 
@@ -1185,10 +1185,24 @@ Console.WriteLine($"state is: {state}");
     <p>foreach от следния код, ако приемете, че <b>intArray </b>е масив от тип <b>int</b>:</p>
 
 <pre class='pre'>
+int[] intArray = { 67, 89, 34, 78, 90, 11, 22, 33, 44, 55 };
+
 foreach (int variabl in <b>intArray</b>) 
 {
     Console.WriteLine(variabl);
 }
+
+// Резултат:
+// 67
+// 89
+// 34
+// 78
+// 90 
+// 11
+// 22 
+// 33
+// 44
+// 55
 </pre>
 
     <p><b>Оператори за прекъсване break
@@ -1247,14 +1261,14 @@ while ( true ) // <span class='red'>{</span> блок на while, повтаря
 <b><span class='red'>}</span></b>
 
 // Резултат:
-въведете число; въведете 0 за край
-5
-вие въведохте: 5
-въведете число; въведете 0 за край
-6
-вие въведохте: 6
-въведете число; въведете 0 за край
-0
+// въведете число; въведете 0 за край
+// 5
+// вие въведохте: 5
+// въведете число; въведете 0 за край
+// 6
+// вие въведохте: 6
+// въведете число; въведете 0 за край
+// 0
 </pre>
 
 
@@ -1375,7 +1389,7 @@ public class Program
       от 1 до 100 /1+2+3+...+99+100/:</p>
       
 <pre class='pre'>
-public static int <b><span class='red'>SumR</span></b>(int n)
+int <b><span class='red'>SumR</span></b>(int n)
 {
     if (n == 1) 
     {   // ако n стигнало до 1, се прекратява 
@@ -1394,8 +1408,7 @@ public static int <b><span class='red'>SumR</span></b>(int n)
 int result = <b><span class='red'>SumR</span></b>(<b>100</b>);
 Console.WriteLine(result); 
 
-// Резултат: 
-<b>5050</b>
+// Резултат: <b>5050</b>
 </pre>
 
     <p>В този пример функцията <b>SumR</b> приема цяло число n като вход и <b>рекурсивно
@@ -1407,7 +1420,7 @@ Console.WriteLine(result);
     <p>Същата задача, решена с оператор<b> for:</b></p>
     
 <pre class='pre'>
-public static int <b><span class='red'>SumF</span></b>(int n)
+int <b><span class='red'>SumF</span></b>(int n)
 {
     int sum = 0;
     
@@ -1421,8 +1434,9 @@ public static int <b><span class='red'>SumF</span></b>(int n)
 // Употреба на <b>for</b> версията /без <b>рекурсия</b>/:
 int result = <b><span class='red'>SumF</span></b>(100);
 
-Console.WriteLine(result); // Резултат: 
-<b>5050</b>
+Console.WriteLine(result); 
+
+// Резултат: <b>5050</b>
 </pre>
 
     <p>В тази версия инициализираме променливата <b>sum</b> с <b>0</b> и използваме
@@ -2821,7 +2835,7 @@ class Program
         основа на техните връзки. Производните класове могат да специализират
         и разширят поведението на базовия клас чрез добавяне на нови
         членове или замяна на съществуващи.</p>
-    <p>Наследяването поддържа следните <b>връзки</b>:</p>
+    <!--p>Наследяването поддържа следните <b>връзки</b>:</p>
     <p>•"class X <b>is-a</b> class Y" - Тази фраза /<b>
         is-a - превежда се като "е"</b>/
         предполага пряка връзка на наследяване, където клас <b>X</b>
@@ -2847,7 +2861,7 @@ class Program
         пряка връзка на наследяване, където клас <b>X</b> е специализирана
         версия на клас <b>Y</b>. Връзката "class X <b>is-a-kind-of</b>
         class Y" показва, че клас <b>X</b> принадлежи към по-широка
-        категория, представена от клас <b>Y</b>. </p>
+        категория, представена от клас <b>Y</b>. </p-->
     <p>Наследяването играе ключова роля в постигането на <b>полиморфизъм</b>,
         което е способността на обекти от различни типове да бъдат
         третирани като обекти от общ базов тип. Полиморфизмът ви позволява

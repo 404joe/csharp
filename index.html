@@ -906,7 +906,7 @@ else if (<span class='blu'>a == 0</span> )
 else 
 <span class='red'>{</span> 
     // <span class='red'>{</span>else block<b><span class='red'>}</span></b>
-    // Executed because a == -120; and neither <span class='grn'>a &gt; 0</span> nor <span class='grn'>a == 0</span> are satisfied
+    // Executed because a == -120; and neither <span class='grn'>a &gt; 0</span> nor <span class='blu'>a == 0</span> are satisfied
     // therefore, no need to check for  a &lt; 0 since if it's not zero 
     // and is not positive, it remains only to be negative
     Console.WriteLine("a is a negative number");
@@ -1005,7 +1005,7 @@ switch(month)
     case  3 : case  4 : case  5 : Console.WriteLine(" Spring "); break;    
     case  6 : case  7 : case  8 : Console.WriteLine(" Summer "); break;
     case  9 : case 10 : case 11 : Console.WriteLine(" Autumn "); break;
-    default : Console.WriteLine&lt;&lt;"The entered month is not within the range [1, 12] "; break;
+    default : Console.WriteLine("The entered month is not within the range [1, 12] "); break;
 }  
 
 // Result: 
@@ -1176,10 +1176,24 @@ Console.WriteLine($"state is: {state}");
     
 
 <pre class='pre'>
+int[] intArray = { 67, 89, 34, 78, 90, 11, 22, 33, 44, 55 };
+
 foreach (int variabl in <b>intArray</b>) 
 {
     Console.WriteLine(variabl);
 }
+
+// Result:
+// 67
+// 89
+// 34
+// 78
+// 90 
+// 11
+// 22 
+// 33
+// 44
+// 55
 </pre>
 
     <p><b>Break</b> and <b>continue</b> statements</p>
@@ -1343,7 +1357,7 @@ public class Program
     <p>Here's an example of a <b>recursive</b> function in C# to calculate the sum of numbers from 1 to 100 /1+2+3+...+99+100/:</p>
     
 <pre class='pre'>
-public static int <b><span class='red'>SumR</span></b>(int n)
+int <b><span class='red'>SumR</span></b>(int n)
 {
     if (n == 1) 
     {   // If n reaches 1, the execution is terminated;  
@@ -1372,7 +1386,7 @@ Console.WriteLine(result);
     <p>The same problem solved with a <b>for</b> loop:</p>
     
 <pre class='pre'>
-public static int <b><span class='red'>SumF</span></b>(int n)
+int <b><span class='red'>SumF</span></b>(int n)
 {
     int sum = 0;
     
@@ -1386,7 +1400,9 @@ public static int <b><span class='red'>SumF</span></b>(int n)
 // Usage of the <b>for</b> version /without <b>recursion</b>/:
 int result = <b><span class='red'>SumF</span></b>(100);
 
-Console.WriteLine(result); // Result: <b>5050</b>
+Console.WriteLine(result); 
+
+// Result: <b>5050</b>
 </pre>
 
     <p>In this version, we initialize the variable <b>sum</b> with <b>0</b> and use
@@ -2621,7 +2637,7 @@ class Program
     <p>Inheritance allows the creation of a <b>hierarchy</b> of classes, where classes are organized in a hierarchical structure based on 
       their relationships. Derived classes can specialize and extend the behavior of the base class by adding new members or 
       overriding existing ones.</p>
-    <p>Inheritance supports the following <b>relationships</b>:</p>
+    <!--p>Inheritance supports the following <b>relationships</b>:</p>
     <p>• "class X <b>is-a</b> class Y" - This phrase implies a direct inheritance relationship, 
       where class <b>X</b> is a specific kind of class <b>Y</b>. It means that class <b>X</b> inherits from class <b>Y</b> and shares 
       its properties, methods, and behavior. This relationship is based on <b>specialization</b>, indicating that class <b>X</b> is a 
@@ -2634,7 +2650,7 @@ class Program
       For example, if we have a class called Vehicle, and classes like Car, Bike, and Bus, we can say that "Car, Bike, and Bus <b>is-a-kind-of</b> Vehicle".</p> 
     <p>In summary, the "class X <b>is-a</b> class Y" relationship signifies a direct inheritance relationship where class <b>X</b> is a 
       specialized version of class <b>Y</b>. The "class X <b>is-a-kind-of</b> class Y" relationship shows that class <b>X</b> belongs to a 
-      broader category represented by class <b>Y</b>.</p>
+      broader category represented by class <b>Y</b>.</p-->
     <p>Inheritance plays a key role in achieving <b>polymorphism</b>, which is the ability of objects of different types to be treated as 
       objects of a common base type. Polymorphism allows you to write code that can work with objects of different derived classes through 
       a common interface (a set of functions, methods, fields, properties), providing flexibility and extensibility.</p>
