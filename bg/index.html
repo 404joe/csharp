@@ -221,7 +221,7 @@ $ dotnet publish -c Release -r ubuntu-x64
       <a href='https://github.com/codespaces' target='_blank' class='lnk'>https://github.com/codespaces</a>
     </p>
     <!--p>3. Изберете Templates ➜ Blank ➜ New</p-->
-    <p>4. Изберете Repository ➜ вашето Repository, от 1а, Дайте Create</p>
+    <p>4. Изберете Repository ➜ вашето Repository, от 1, Дайте Create</p>
     <p>5. Върнете се в Codespaces /
       <a href='https://github.com/codespaces' target='_blank' class='lnk'>https://github.com/codespaces</a>
     </p>
@@ -1668,7 +1668,7 @@ int[] myArray = {21, 52, 12, 14, 45};
 int indmx = 0; // индекс на максималния елемент
                // с нула го насочваме към първия елемент
 
-for (int i = 1; i &lt; myArray.Length; i++)
+for (int i = 0; i &lt; myArray.Length; i++)
 {
     if (myArray[indmx] &gt; myArray[i] )
     {
@@ -1693,7 +1693,7 @@ Console.WriteLine($"Max element: myArray [{indmx}] = {myArray [indmx]} " );
 <pre class='pre'>
 int[] myArray = {21, 52, 12, 14, 45};
 
-for (int i = 1; i &lt; myArray .Length; i++)
+for (int i = 0; i &lt; myArray .Length; i++)
 {
     Console.WriteLine($"myArray[{i}]=" + myArray[i] + " - " + 
                      (myArray[i] % 2 == 0 ? "even" : "odd"));
@@ -1781,9 +1781,9 @@ Console.WriteLine($" Цвят - 3 - черна     : {colorCounts[3]} ");
 int[] numbers = {21, 52, 12, 14, 45};
 
 // Bubble sort algorithm
-for (int l = 0; l &lt; numbers.Length - 1; ;++)
+for (int l = 0; l &lt; numbers.Length - 1; l++)
 {
-    for (int r = l + 1; r &lt; numbers.Length - 1; r++)
+    for (int r = l + 1; r &lt; numbers.Length; r++)
     {
         if (numbers[l] &gt; numbers[r])
         {
@@ -1876,15 +1876,35 @@ foreach (string str in strings)
         по-голям от втория, той връща положително цяло число.</p>
             
 <pre class='pre'>
-string s1 = "<b>Hold</b>", s2 = "<b>Beer</b>";
-int result = string.Compare(s1, s2);
+string[] words = { "hold", "my", "beer", "two", "one" };
 
-if (result &lt; 0) // result е отрицатело число, защото 
-{                  // s1 &lt; s2, т.е. Beer &gt; Hold
-     // размяна на местата на 2-та 
-     // елемента при сортиране по азбучен ред
-     // защото Beer започва с <b>B</b>, което е преди <b>H</b>
+// Bubble sort algorithm
+for (int l = 0; l &lt; words.Length - 1; l++)
+{
+    for (int r = l + 1; r &lt; words.Length; r++)
+    {
+        if (string.Compare(words[l], words[r]) &gt; 0)
+        {
+            // Swap words[l] and words[r]
+            string tmp = words[r];
+            words[r] = words[l];
+            words[l] = tmp;
+        }
+    }
 }
+
+// Print the sorted array
+foreach (string word in words)
+{
+    Console.WriteLine(word);
+}
+
+// Резултат:
+// beer
+// hold
+// my
+// one
+// two
 </pre>
         
     <p><b>Двумрени и n-мерни</b></p>
@@ -2044,7 +2064,7 @@ for( int i = 0; i &lt; len; i++ )
 <pre class='pre'>
 <b>List&lt;int&gt; list = new List&lt;int&gt; { 21, 22, 23, 24, 25 };</b>
 <b>list.Add(26);</b>
-</pre>        
+</pre>
 
     <p>В този пример създаваме списък <b>List&lt;int&gt;,
     </b>тип <b>int</b> и го инициализираме със стойностите 21, 22, 23,
@@ -2079,6 +2099,35 @@ for( int i = 0; i &lt; len; i++ )
         точка (list<b><span class='red'>.</span>Add</b>, <b>list<span class='red'>.</span></b>Count
         и т.н.), за да извършвате операции в списъка, като добавяне
         или извличане на елементи.</p>
+        
+
+<pre class='pre'>
+<b>List&lt;string&gt; words = new List&lt;string&gt; { "two", "one", "hold" };</b>
+
+// Добавяне на нови елементи към списъка
+words.Add("my");
+words.Add("beer");
+
+// Сортиране на списъка, като нормален масив
+words.Sort();
+
+// Извеждане на обновения списък
+foreach (string word in words)
+{
+    Console.WriteLine(word);
+}    
+
+// Result:
+// beer
+// hold
+// my
+// one
+// two
+</pre>
+
+    <p>Този пример сортира List&lt;string&gt; обект използвайки метода <b>List.Sort()</b>, за да подреди символните низове 
+      във възходящ лексикографски ред и след това отпечатва сортирания списък в конзолата.</p>  
+        
     <p><b>Enum</b></p>
     <p><b>Enum </b>(изброяване) в C# е тип стойност, който представлява
         набор от именувани константни стойности. Тя ви позволява да
@@ -2358,53 +2407,6 @@ class Program
     // Finalizer code goes here.
 }
 </pre>
-
-    <!--p><b>Индексатор</b> - /indexer/ е механизъм /<b>Get/Set</b> методи/,
-        който позволява достъп до обекти в масив чрез синтаксис за
-        индексиране. Той предоставя възможност за <b>Get</b>/<b>Set</b>
-        методи. Индексаторите позволяват и <b>низови</b> индекси, като:
-        days['index1'], days['index2'] /ако <b>days </b>е индексиран
-        масив/. Можете да укажете поведението за извличане или задаване
-        на стойности въз основа на предоставения индекс чрез <b>Get/Set</b>
-        методите, което може да направи достъпа и манипулирането на
-        данни във вашия клас по-удобен.</p>
-    <p>Класът MyCollection демонстрира използването на <b>индексатор</b>,
-        който позволява да осъществявате достъп до елементи в масива
-        от данни, като използвате синтаксис за индексиране.</p>
-
-<pre class='pre'>
-// Пример за клас с <b>индексатор</b>
-class MyCollection
-{
-    private string[] <b><span class='blu'>data </span></b>= new string[5]; // Масив тип низ, върху който 
-                                           // ще създадем <b>индексатор</b>
-    public string this[<b><span class='grn'>int</span></b><span class='grn'> </span>index] // декларация на <b>индексатор </b>тип <b><span class='grn'>int </span></b>на масива <b><span class='blu'>data</span></b>
-    {
-         get { return <b><span class='blu'>data</span></b>[index]; }
-         set { <b><span class='blu'>data</span></b>[index] = value;}
-    }
-}
-
-
-class Program 
-{    
-    static void Main()
-    {
-        // Използване на <b>индексатор: </b>създаване на <b>indexer </b>обект - <b><span class='red'>collection</span></b>
-        // Използване на <b>индексатор: </b>създаване на <b>indexer </b>обект - <b><span class='red'>collection</span></b>
-        // от клас <b>MyCollection</b>
-        MyCollection <b><span class='red'>collection </span></b>= new MyCollection();
-        
-        // използване на <b>Set</b> метода на <b>индексатора</b>
-        collection[0] = "<span class='ora'>Hold my</span>"; 
-        collection[1] = "<span class='ora'>beer</span>"; 
-        
-        // използване на <b>Get</b> метода на <b>индексатора </b>
-        Console.WriteLine(collection[0]);  // Резултат: <span class='ora'>Hold my</span>
-        Console.WriteLine(collection[1]);  // Резултат: <span class='ora'>beer</span>
-    }
-}   
-</pre-->
 
     <p><b>Модификатор на методите</b></p>
     <p><b>Статични / не-статични методи</b>: Статичните методи са методи, които принадлежат

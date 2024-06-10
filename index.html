@@ -1630,7 +1630,7 @@ int[] myArray = {21, 52, 12, 14, 45};
 int indmx = 0; // index of the maximum element
                // with zero, it pints to the first element 
 
-for (int i = 1; i &lt; myArray.Length; i++)
+for (int i = 0; i &lt; myArray.Length; i++)
 {
     if (myArray[indmx] &gt; myArray[i] )
     {
@@ -1654,7 +1654,7 @@ Console.WriteLine($"Max element: myArray [{indmx}] = {myArray [indmx]} " );
 <pre class='pre'>
 int[] myArray = {21, 52, 12, 14, 45};
 
-for (int i = 1; i &lt; myArray .Length; i++)
+for (int i = 0; i &lt; myArray .Length; i++)
 {
     Console.WriteLine($"myArray[{i}]=" + myArray[i] + " - " + 
                      (myArray[i] % 2 == 0 ? "even" : "odd"));
@@ -1739,9 +1739,9 @@ Console.WriteLine($" Color - 3 - black  : {colorCounts[3]} ");
 int[] numbers = {21, 52, 12, 14, 45};
 
 // Bubble sort algorithm
-for (int l = 0; l &lt; numbers.Length - 1; ;++)
+for (int l = 0; l &lt; numbers.Length - 1; l++)
 {
-    for (int r = l + 1; r &lt; numbers.Length - 1; r++)
+    for (int r = l + 1; r &lt; numbers.Length; r++)
     {
         if (numbers[l] &gt; numbers[r])
         {
@@ -1829,15 +1829,35 @@ foreach (string str in strings)
       the first string is greater than the second, it returns a positive integer.</p>
             
 <pre class='pre'>
-string s1 = "<b>Hold</b>", s2 = "<b>Beer</b>";
-int result = string.Compare(s1, s2);
+string[] words = { "hold", "my", "beer", "two", "one" };
 
-if (result &lt; 0) // result is a negative number because 
-{                  // s1 &lt; s2, i.e., Beer &gt; Hold
-     // swapping the positions of the two
-     // elements in alphabetical order
-     // because Beer starts with <b>B</b>, which comes before <b>H</b>
+// Bubble sort algorithm
+for (int l = 0; l &lt; words.Length - 1; l++)
+{
+    for (int r = l + 1; r &lt; words.Length; r++)
+    {
+        if (string.Compare(words[l], words[r]) &gt; 0)
+        {
+            // Swap words[l] and words[r]
+            string temp = words[r];
+            words[r] = words[l];
+            words[l] = temp;
+        }
+    }
 }
+
+// Print the sorted array
+foreach (string word in words)
+{
+    Console.WriteLine(word);
+}
+
+// Result:
+// beer
+// hold
+// my
+// one
+// two
 </pre>
  
     <p><b>Two-Dimensional and n-Dimensional Arrays</b></p>
@@ -2001,7 +2021,34 @@ for( int i = 0; i &lt; len; i++ )
     <p>By using the generic type <b>List&lt;string&gt;</b>, you declare a variable that can hold a collection of strings. The 
       methods of this variable  can be accessed using dot notation (list<b>.</b>Add, list<b>.</b>Count, etc.) to perform operations 
       on the list, such as adding or retrieving elements.</p>
-    
+
+<pre class='pre'>
+<b>List&lt;string&gt; words = new List&lt;string&gt; { "two", "one", "hold" };</b>
+
+// Adding new elements to the list
+words.Add("my");
+words.Add("beer");
+
+// Sort the list, like a normal array
+words.Sort();
+
+// Print the updated list
+foreach (string word in words)
+{
+    Console.WriteLine(word);
+}    
+
+// Result:
+// beer
+// hold
+// my
+// one
+// two
+</pre>
+
+    <p> This example sorts a List&lt;string&gt; object using the <b>List.Sort()</b> method, to arrange the strings in ascending 
+    lexicographical order, and then prints the sorted list to the console.</p>
+   
     <p><b>Enum</b></p>
     <p>An <b>enum</b> (enumeration) in C# is a value type that represents a set of named constant values. It allows you to define 
       a collection of related named constant values, typically used to represent a set of possible values for a specific property or parameter.</p>
@@ -2232,47 +2279,6 @@ class Program
 }
 </pre>
 
-    <!--p><b>Indexer</b> - /indexer/ is a mechanism /<b>Get/Set</b> methods/ that allows accessing objects in an array using indexing syntax.
-      It provides the ability to define <b>Get</b>/<b>Set</b> methods. Indexers also allow <b>string</b> indices, such as: days['index1'], days['index2'] /if <b>days</b> is an indexed array/. You can specify the behavior for retrieving or setting values based on the provided 
-      index using the <b>Get/Set</b> methods, which can make accessing and manipulating data in your class more convenient.</p>
-
-    <p>The class MyCollection demonstrates the use of an <b>indexer</b> that allows accessing elements in the data array using indexing syntax.</p>
-
-<pre class='pre'>
-// Example of a class with an <b>indexer</b>
-class MyCollection
-{
-    private string[] <b><span class='blu'>data </span></b>= new string[5]; // String array on which 
-                                           // we will create an <b>indexer</b>
-    public string this[<b><span class='grn'>int</span></b><span class='grn'> </span>index] // Declaration of the <b>indexer</b> of type <b><span class='grn'>int </span></b>for the array <b><span class='blu'>data</span></b>
-    {
-         get { return <b><span class='blu'>data</span></b>[index]; }
-         set { <b><span class='blu'>data</span></b>[index] = value;}
-    }
-}
-
-
-class Program 
-{    
-    static void Main()
-    {
-        // Using the <b>indexer: </b>creating an <b>indexer </b>object - <b><span class='red'>collection</span></b>
-        // from the <b>MyCollection</b> class
-        
-        MyCollection <b><span class='red'>collection </span></b>= new MyCollection();
-        
-        // using the <b>Set</b> method of the <b>indexer</b>
-        collection[0] = "<span class='ora'>Hold my</span>"; 
-        collection[1] = "<span class='ora'>beer</span>"; 
-        
-        // using the <b>Get</b> method of the <b>indexer</b>
-        Console.WriteLine(collection[0]);  // Result: <span class='ora'>Hold my</span>
-        Console.WriteLine(collection[1]);  // Result: <span class='ora'>beer</span>
-    }
-}   
-</pre-->
-
-
     <p><b>Method Modifiers</b></p>
     <p><b>Static / Non-static Methods</b>: Static methods are methods that belong to the class rather than an instance of the class. They can 
       be called without creating an object of the class.</p> <p>Static methods are useful when you need to perform an action that is not 
@@ -2327,7 +2333,7 @@ namespace HoldMyBeer  // namespace is used to group classes that perform
     {    
         static void <b>Main</b>(string[] args)
         {
-            <b>MyClass p = new MyClass(); // <span class='red'>new</span> - creating an object <b>p</b> of the class 
+            <b>MyClass p = new MyClass();</b> // <span class='red'>new</span> - creating an object <b>p</b> of the class 
                                        // <b>MyClass</b> in the variable <b>p</b>
             <b>p</b>.MyMethod(); // Calling MyMethod
 
