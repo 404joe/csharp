@@ -2822,7 +2822,7 @@ namespace MyNamespace
     
     class MyDerivedClass : MyClass // We inherit <b>MyDerivedClass</b> from the class <b>MyClass</b>
     {
-        void MyMethod()
+        public void MyMethod()
         {
             Console.WriteLine(myInt); // This is allowed because MyDerivedClass  
                                       // is in the same assembly as MyClass.
@@ -2993,7 +2993,7 @@ class Program
         // Deserialization of the <b>JSON</b> string back into an object
         var deserializedPerson = JsonSerializer.Deserialize&lt;Person&gt;(jsonString);
         
-        Console.WriteLine($"Name: {deserializedPerson.Name});
+        Console.WriteLine($"Name: {deserializedPerson.Name}");
         Console.WriteLine($"Age: {deserializedPerson.Age}");
     }
 }
