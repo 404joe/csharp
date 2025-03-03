@@ -3082,7 +3082,7 @@ namespace MyNamespace
     
     class MyDerivedClass : MyClass // наследяваме <b>MyDerivedClass</b>от класа <b>MyClass</b>
     {
-        void MyMethod()
+        public void MyMethod()
         {
             Console.WriteLine(myInt); // Това е позволено, защото MyDerivedClass 
                                       // е в същото assembly като MyClass
@@ -3286,7 +3286,7 @@ class Program
         // Десериализация на <b>JSON </b>низа обратно в обект
         var deserializedPerson = JsonSerializer.Deserialize&lt;Person&gt;(jsonString);
         
-        Console.WriteLine($"Name: {deserializedPerson.Name});
+        Console.WriteLine($"Name: {deserializedPerson.Name}");
         Console.WriteLine($"Age: {deserializedPerson.Age}");
     }
 }
